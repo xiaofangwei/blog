@@ -77,6 +77,6 @@ theme: hexo-theme-spfk
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:git
-  repository:git@github.com:No-Sky/No-Sky.github.io.git
-  branch:master
+  type: git
+  repository: git@github.com:No-Sky/No-Sky.github.io.git
+  branch: master
