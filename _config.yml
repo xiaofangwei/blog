@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: No-Sky的博客
 subtitle:
 description:
 author: No-Sky
@@ -78,5 +78,5 @@ theme: hexo-theme-spfk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:No-Sky/No-Sky.github.io.git
+  repository: https://github/No-Sky/No-Sky.github.io.git
   branch: master
