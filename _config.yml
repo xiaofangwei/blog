@@ -5,14 +5,14 @@
 # Site
 title: No-Sky的博客
 subtitle:
-description:
+description: 四处为家，随遇而安
 author: No-Sky
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://No-Sky.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,11 +72,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-spfk
+theme: theme1 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github/No-Sky/No-Sky.github.io.git
+  repository: git@github.com:No-Sky/No-Sky.github.io.git
   branch: master
