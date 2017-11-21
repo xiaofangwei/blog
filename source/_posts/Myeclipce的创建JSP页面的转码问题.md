@@ -13,7 +13,7 @@ tags: MyEclipse
 # 打开myeclipse找到下图所示位置
 ![myeclipse10写jsp页面代码修改pageEncoding属性2](https://github.com/No-Sky/storage/raw/master/pic/myeclipse1.png)
 
-<!-- more -->>
+                                                                    <!-- more -->
 
 ![myeclipse10写jsp页面代码修改pageEncoding属性3](https://github.com/No-Sky/storage/raw/master/pic/myeclipse2.png)
 

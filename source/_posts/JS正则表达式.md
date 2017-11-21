@@ -6,7 +6,7 @@ tags: javascript
 ---
 ***正则表达式（英语：Regular Expression，在代码中常简写为regex、regexp或RE）使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式。搜索模式可用于文本搜索和文本替换。***
 ![正则表达式](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511192445199&di=91ee57c16770af499387623d2e36b4df&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D3529936001%2C627965941%26fm%3D214%26gp%3D0.jpg)
-<!-- more -->
+                                                                  <!-- more -->
 ### 什么是正则表达式？
 
 - 正则表达式是由一个字符序列形成的搜索模式。

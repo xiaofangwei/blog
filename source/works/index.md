@@ -4,6 +4,8 @@ date: 2017-11-19 13:49:43
 ---
 [Smart-message-board](https://github.com/frozentearz/Smart-message-board)
 
+[Git教程](/2017/11/21/Git教程/)
+
 [github-hexo搭建博客](/2017/11/19/github-hexo搭建博客/)
 
 [javascript正则表达式](/2017/11/19/JS正则表达式/)
