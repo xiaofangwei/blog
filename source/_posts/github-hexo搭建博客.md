@@ -4,7 +4,7 @@ date: 2017-11-19 21:48:43
 category: hexo
 tags: hexo
 ---
-### 通过几天的努力终于把hexo+github形式的博客搭建好了！
+### 通过几天的努力终于把hexo+github形式的博客搭建好了！（转载）
 ![hexo](https://github.com/aqqje/images/raw/master/images/hexo.jpg "hexo")
 <!--more-->
 正文：
@@ -145,7 +145,7 @@ tags:
 
 参考：[http://hifor.net/2015/07/01/%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo-github](http://hifor.net/2015/07/01/%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo-github)<br/>
 作者：梦不若星辰
-链接：https://aqqje.github.io
+链接：[https://aqqje.github.io](https://aqqje.github.io)
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
