@@ -8,7 +8,7 @@ tags: oracle
 ![OracleLogo](https://github.com/No-Sky/storage/raw/master/pic/OracleLogo1.jpg)
                                                                   <!-- more -->
  
-#### 一、 创建表空间
+## 一、 创建表空间
 
 （在SqlServer中称为创建一个是数据库，而在Oracle中则称为创建一个表空间）
 
@@ -22,7 +22,7 @@ tags: oracle
 
 	drop tablespace myspace incluiding contents and datafile;
 
-#### 二、创建用户
+## 二、创建用户
 
 *格式： create user 用户名 identified by 密码 default tablespace 默认表空间*
 
@@ -34,7 +34,7 @@ tags: oracle
 
 	drop user user1 cascade;
 
-#### 三、给用户授权
+## 三、给用户授权
 
 *方式一：授予角色*
 
