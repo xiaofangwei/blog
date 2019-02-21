@@ -1,43 +1,82 @@
 ---
-title: 个人简历
+title: "简历"
 date: 2018-09-12 12:19:49
 ---
 
-# 自我介绍
+#  
 
-湖南衡阳籍人士，1999年生，现就读于湖南软件职业学院，19届毕业。喜欢运动，热爱跑步。
+##   文档下载
 
-# 教育经历
+​        ● [肖方伟的简历.pdf](https://github.com/No-Sky/storage/raw/master/docs/%E8%82%96%E6%96%B9%E4%BC%9F%E7%9A%84%E7%AE%80%E5%8E%86.pdf)
 
-* 2013年入学衡阳县六中
+​        ● [肖方伟的简历.doc](https://github.com/No-Sky/storage/raw/master/docs/%E8%82%96%E6%96%B9%E4%BC%9F%E7%9A%84%E7%AE%80%E5%8E%86.doc)
 
-* 2016年入学湖南软件职业学院
 
-# 学校经历
 
-* 17年寒假参加过湖南高职技能竞赛Web技能项目，遗憾未能得奖
+##   联系方式 
 
-* 18年拿到学校五四优秀学生奖章
+​	●手机：15573213233
 
-# IT技能树
+​	●邮箱：xfw_nosky@163.com
 
-* 前端： HTML、CSS、JavaScript、
-  * 框架：JQuery、Vue、BootStrap
-* 后台：Java
-  * 框架：SpringMVC、Spring、SpringBoot、MyBatis、-Cache、
-* 数据库： Oracle、Mysql、SQLServer
+ 
 
-# 实习经历 
+##   自我描述 
 
-* 尚未有实习经历
+​	学习能力强，善于钻研技术难关，喜欢编程。熟悉Java，熟悉MySql关系型数据库，了解Oracle和SqlServer；熟练掌握SpringMVC、Spring、Mybatis等框架及SSM整合技术，了解SpringBoot；希望在3年内成为一名独立且合格的Java后端工程师 
 
-# 项目经验
-* Nobel教育手机网站
-  * 项目介绍：Nobel Education是一家在悉尼的教育机构。他们准备做一个面向学生定课的手机网站。网站最基础的功能是：向学生提供浏览课程、查看上课时间、查看上课老师的服务
-  * 项目地址：
-     * 手机端：[http://47.95.214.195](http://47.95.214.195)
-     * 后台管理站： [http://47.95.214.195:8080/nobeledu](http://47.95.214.195:8080/nobeledu)
-  * 使用技术：
-     * 前端：（后台管理）Jquery、Bootstrap、（手机端）Vue
-     * 后台：Spring、SpringMVC、Mybatis
-  * 本人职责：负责手机前端页面、后台接口设计与完善（报表、邮件服务等等）、数据库部分设计
+ 
+
+##  教育经历 
+
+**湖南软件职业学院**                                                                                                                                          2016-2019
+
+​	大专 / 软件与信息工程
+
+ 
+
+##  在校荣誉
+
+​	●学校“五四优秀学生”奖章
+
+​	●获得国家励志奖学金 
+
+ 
+
+##  个人技能
+
+​	●前端：熟练使用HTML、CSS、JavaScript；熟悉JQuery、Bootstrap框架、了解Vue.js
+
+​	●后端：熟悉Java开发、熟悉Spring、SpringMVC、Mybatis框架及其整合技术、了解SpringBoot
+
+
+
+##  项目经验 
+
+**Nobel教育订课系统**                                                                                                                              2018.06-2018.08 
+
+​	● 介绍：Nobel Education 是一家在悉尼的教育机构。他们准备做一个面向学生订课的手机网站。网站的基础功能是：向学生提供浏览课程、查看上课时间、查看上课老师 
+
+​	● 使用技术：
+
+​	● 前端：Jquery、Bootstrap（后台管理）、Vue(手机)；
+
+​	● 后端：Spring、SpringMVC、Mybatis、Mysql 
+
+ 
+
+完成了手机端网页的编码，后端接口的设计与编码、数据库设计 
+
+项目链接: [http://47.95.214.195 ](http://47.95.214.195 )
+
+ 
+
+##  社交主页 
+
+​	● [http://blog.xiaofangwei.cn ](http://blog.xiaofangwei.cn)
+
+ 
+
+## 致谢
+
+感谢您花时间阅读我的简历，期待能有机会和您共事。

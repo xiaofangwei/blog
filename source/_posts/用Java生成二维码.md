@@ -9,9 +9,9 @@ tags: 二维码
 java开发二维码的流程
 
 1、导入核心jar包，在这里使用Google的zxing.jar，还有一个是日本开发qrcode就不用了。
-
+```
 	core-3.1.0.jar
-<!--more-->
+```
 2、编写二维码核心类
 ```java
 	public static void zxingImg(String content,HttpServletResponse response) throws IOException{
@@ -69,5 +69,6 @@ java开发二维码的流程
 2）使用SpringMVC(后续添加)
 
 4、在网页中显示
-
+```html
 	<img src="QrcodeServlet?content=<%=content %>" />
+```

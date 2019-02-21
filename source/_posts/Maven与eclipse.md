@@ -1,7 +1,6 @@
 ---
 title: Maven与eclipse
 date: 2018-04-04 22:23:49
-categories: eclipse配置
 tags: Maven
 ---
 <h1>Maven配置与eclipse配置Maven仓库</h1>

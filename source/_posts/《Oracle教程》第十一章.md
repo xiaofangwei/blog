@@ -1,11 +1,9 @@
 ---
 title: 《Oracle教程》第十一章
 date: 2017-12-02 17:43:26
-category: Oracle
 tags: oracle
 ---
-# Oracle第十一章————视图
-
+# 分区、视图
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
  <!-- more -->
@@ -43,12 +41,13 @@ TABLESPACE USERS
 </pre>
 
 步骤3：检查A区中的考生：
-		
-	SELECT *  FROM  考生 PARTITION(A);
-		
+```SQL
+SELECT *  FROM  考生 PARTITION(A);
+```	
 步骤4：检查全部的考生：
-		
-	SELECT *  FROM  考生;
+```SQL
+SELECT *  FROM  考生;
+```
 
 ## 二、视图
 
@@ -57,45 +56,53 @@ TABLESPACE USERS
  视图不同于表，视图本身不包含任何数据。而视图只是一种定义，对应一个查询语句。视图的数据都来自于某些表，这些表被称为基表。    视图可以在表能够使用的任何地方使用，但在对视图的操作上同表相比有些限制，特别是插入和修改操作。对视图的操作将传递到基表，所以在表上定义的约束条件和触发器在视图上将同样起作用。2、视图的创建
  
 ### 2、格式：
-	create [or replace] view 视图名 
-    as
-    select 语句;
+```SQL
+create [or replace] view 视图名 
+as
+select 语句;
+```
 
 例：创建图书作者视图：
-		
-	CREATE VIEW 图书作者(书名,作者) 		
-	AS SELECT 图书名称,作者 FROM 图书;
+```SQL
+CREATE VIEW 图书作者(书名,作者) 		
+AS SELECT 图书名称,作者 FROM 图书;
+```
 
 查询视图全部内容
-		
-	SELECT * FROM 图书作者;    
+```SQL
+SELECT * FROM 图书作者;    
+```
 
 查询部分视图：
-		
-	SELECT 作者 FROM 图书作者;
+```SQL
+SELECT 作者 FROM 图书作者;
+```
 		
 删除视图：
-		
-	DROP VIEW 清华图书;
+```SQL
+DROP VIEW 清华图书;
+```
 
 ### 3．创建只读视图
 		
 创建只读视图要用`WITH READ ONLY`选项。
 		
 例：创建emp表的经理视图：
-		
-	CREATE OR REPLACE VIEW manager 
+```SQL
+CREATE OR REPLACE VIEW manager 
 	AS SELECT * FROM emp WHERE job= 'MANAGER'
 	WITH READ ONLY;
+```
 
 ### 4．使用WITH CHECK OPTION选项
 		
 使用`WITH CHECK OPTION`选项。使用该选项，可以对视图的插入或更新进行限制，即该数据必须满足视图定义中的子查询中的WHERE条件，否则不允许插入或更新。
 
 例：
-
-	CREATE OR REPLACE VIEW 清华图书 		
+```SQL
+CREATE OR REPLACE VIEW 清华图书 		
 	AS SELECT * FROM 图书 WHERE 出版社编号= '01'
+```
 		
 *WITH CHECK OPTION;注：插入数据时，由于带了with check option的选项，则只能插入出版社编为'01'的数据*
 
@@ -114,5 +121,6 @@ TABLESPACE USERS
 可以通过`DESCRIB`E命令查看字典的其他列信息。
 
 例：查看用户拥有的视图：
-		
-	SELECT object_name FROM user_objects WHERE object_type='VIEW';
+```SQL
+SELECT object_name FROM user_objects WHERE object_type='VIEW';
+```

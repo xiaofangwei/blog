@@ -1,11 +1,9 @@
 ---
 title: 《Oracle教程》第九章
 date: 2017-11-29 18:49:15
-category: Oracle
 tags: oracle
 ---
-# Oracle第九章——增删改、序列、事务
-
+# 表的增删改操作
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
  <!-- more -->
@@ -19,11 +17,15 @@ tags: oracle
 ## 二、复制数据
 **1、通过一条查询语句创建一个新表(要求目标表不存在)**
 
+	```SQL
 	create table manager as select empno,ename,sal, from emp where job= 'CLERK';
+	```
 
 **2、通过一条查询语句复制数据(要求目标表必须已建好)**
 
+	```SQL
 	insert into manager select empno,ename,sal from emp where job = 'CLERK';
+	```
 
 ## 三、序列
 
@@ -31,8 +33,10 @@ tags: oracle
 
 如：创建从2000起始，增量为1 的序列abc：
 
+	```SQL
 	create sequence abc increment by 1 start with 2000
 	maxvalue 99999 cycle nocache;
+	```
 
 ### 2、使用序列
 
@@ -42,8 +46,10 @@ tags: oracle
 
 如：
 
+	```SQL
 	insert into manager values(abc.nextval,'小王',2500);
 	insert into manager values(abc.nextval,'小赵'，2800);
+	```
 
 ## 三、事务
 &nbsp;&nbsp;&nbsp;&nbsp;**两次连续成功的COMMIT或ROLLBACK之间的操作，称为一个事务。在一个事务内，数据的修改一起提交或撤销，如果发生故障或系统错误，整个事务也会自动撤销**<br>

@@ -1,10 +1,9 @@
 ---
 title: 《Oracle教程》第十三章
 date: 2017-12-05 19:11:04
-category: Oracle
 tags: oracle
 ---
-# Oracle第十三章——PL/SQL空值语句、游标
+# PL/SQL空值语句、游标
 
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
@@ -123,144 +122,144 @@ END LOOP;
 |SQL%ISOPEN|布尔型|DML执行过程中为真，结束后为假|
 
 如：使用隐式游标的属性，判断对雇员工资的修改是否成功。
-		
-	SET SERVEROUTPUT ON 		
-	BEGIN  		
-	UPDATE emp SET sal=sal+100 WHERE empno=1234;		 
-	IF SQL%FOUND THEN  		
-	DBMS_OUTPUT.PUT_LINE('成功修改雇员工资！');  		
-	COMMIT;  		
-	ELSEDBMS_OUTPUT.PUT_LINE('修改雇员工资失败！');		 
-	END IF; 		
-	END;
-
+```SQL	
+SET SERVEROUTPUT ON 		
+BEGIN  		
+UPDATE emp SET sal=sal+100 WHERE empno=1234;		 
+IF SQL%FOUND THEN  		
+DBMS_OUTPUT.PUT_LINE('成功修改雇员工资！');  		
+COMMIT;  		
+ELSEDBMS_OUTPUT.PUT_LINE('修改雇员工资失败！');		 
+END IF; 		
+END;
+```
 ### 3、显式游标
 
 游标的使用分成以下4个步骤。
 
 #### a．声明游标
-		
 在DECLEAR部分按以下格式声明游标：
-		
-	CURSOR 游标名[(参数1 数据类型[，参数2 数据类型...])]		 
-	IS SELECT语句;
-		
+```SQL		
+CURSOR 游标名[(参数1 数据类型[，参数2 数据类型...])]		 
+IS SELECT语句;
+```		
 参数是可选部分，所定义的参数可以出现在SELECT语句的WHERE子句中。如果定义了参数，则必须在打开游标时传递相应的实际参数。
 
 #### b.打开游标		
 在可执行部分，按以下格式打开游标：
-		
-	OPEN 游标名[(实际参数1[，实际参数2...])];
-		
+```SQL		
+OPEN 游标名[(实际参数1[，实际参数2...])];
+```		
 打开游标时，SELECT语句的查询结果就被传送到了游标工作区。
 
 #### c.提取数据
 		
 在可执行部分，按以下格式将游标工作区中的数据取到变量中。提取操作必须在打开游标之后进行。
-		
+```SQL		
 	FETCH 游标名 INTO 变量名1[，变量名2...];
-		
+```		
 或
-		
+```SQL	
 	FETCH 游标名 INTO 记录变量;
-		
+```		
 游标打开后有一个指针指向数据区，FETCH语句一次返回指针所指的一行数据，要返回多行需重复执行，可以使用循环语句来实现。控制循环可以通过判断游标的属性来进行。
 
   定义记录变量的方法如下：
-		
-         变量名 表名|游标名%ROWTYPE；
-
+```		
+变量名 表名|游标名%ROWTYPE；
+```
 #### d.关闭游标
-		
+```		
 	CLOSE 游标名;
-		
+```		
 显式游标打开后，必须显式地关闭。游标一旦关闭，游标占用的资源就被释放，游标变成无效，必须重新打开才能使用。
 
 【例1】 用游标提取emp表中7788雇员的名称和职务。
-
-	SET SERVEROUTPUT ON	     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	DECLARE		
-	    v_ename VARCHAR2(10);	
-	    v_job VARCHAR2(10);	
-	    CURSOR emp_cursor IS 
-	 SELECT ename,job FROM emp WHERE empno=7788;
-	BEGIN
-	    OPEN emp_cursor;
-	    FETCH emp_cursor INTO v_ename,v_job;	
-	    DBMS_OUTPUT.PUT_LINE(v_ename||','||v_job);
-	    CLOSE emp_cursor;	
-	END;
- 
+```SQL
+SET SERVEROUTPUT ON	     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+DECLARE		
+    v_ename VARCHAR2(10);	
+    v_job VARCHAR2(10);	
+    CURSOR emp_cursor IS 
+ SELECT ename,job FROM emp WHERE empno=7788;
+BEGIN
+    OPEN emp_cursor;
+    FETCH emp_cursor INTO v_ename,v_job;	
+    DBMS_OUTPUT.PUT_LINE(v_ename||','||v_job);
+    CLOSE emp_cursor;	
+END;
+ ```
 【例2】  用游标提取emp表中7788雇员的姓名、职务和工资。
-		
-	SET SERVEROUTPUT ON	     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	DECLARE	 
-		CURSOR emp_cursor IS  SELECT ename,job,sal FROM emp WHERE empno=7788;
-		emp_record emp_cursor%ROWTYPE;
-		    --用游标定义记录变量	
-	BEGIN 
-		OPEN emp_cursor;	
-		FETCH emp_cursor INTO emp_record;  
-		 DBMS_OUTPUT.PUT_LINE(emp_record.ename||','|| emp_record.job||','|| emp_record.sal);	
-		 CLOSE emp_cursor;	
-	END;
-
+```SQL		
+SET SERVEROUTPUT ON	     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+DECLARE	 
+	CURSOR emp_cursor IS  SELECT ename,job,sal FROM emp WHERE empno=7788;
+	emp_record emp_cursor%ROWTYPE;
+	    --用游标定义记录变量	
+BEGIN 
+	OPEN emp_cursor;	
+	FETCH emp_cursor INTO emp_record;  
+	 DBMS_OUTPUT.PUT_LINE(emp_record.ename||','|| emp_record.job||','|| emp_record.sal);	
+	 CLOSE emp_cursor;	
+END;
+```
 【例3】  显示工资最高的前3名雇员的名称和工资。
-		
-	SET SERVEROUTPUT ON		   --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	DECLARE	
-		 V_ename VARCHAR2(10);	
-		V_sal NUMBER(5);	
-		CURSOR emp_cursor IS  SELECT ename,sal FROM emp ORDER BY sal DESC;	
-	BEGIN	
-		 OPEN emp_cursor;
-		 FOR I IN 1..3 LOOP  
-			 FETCH emp_cursor INTO v_ename,v_sal;
-			 DBMS_OUTPUT.PUT_LINE(v_ename||','||v_sal);
-	  END LOOP;
-	   CLOSE emp_cursor;
-	END;
-
+```SQL		
+SET SERVEROUTPUT ON		   --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+DECLARE	
+	 V_ename VARCHAR2(10);	
+	V_sal NUMBER(5);	
+	CURSOR emp_cursor IS  SELECT ename,sal FROM emp ORDER BY sal DESC;	
+BEGIN	
+	 OPEN emp_cursor;
+	 FOR I IN 1..3 LOOP  
+		 FETCH emp_cursor INTO v_ename,v_sal;
+		 DBMS_OUTPUT.PUT_LINE(v_ename||','||v_sal);
+  END LOOP;
+   CLOSE emp_cursor;
+END;
+```
 ### 4、游标循环（重点）
 
 方法一：使用特殊的FOR循环形式显示全部雇员的编号和名称(省略掉定义记录变量、打开游标、提取数据、关闭游标)。
-
-	SET SERVEROUTPUT ON     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	DECLARE
-	 	CURSOR emp_cursor IS 
-	 SELECT empno, ename FROM emp;
-	BEGIN	
-		FOR Emp_record IN emp_cursor LOOP   
-			 DBMS_OUTPUT.PUT_LINE(Emp_record.empno|| Emp_record.ename);
-		END LOOP;
+```SQL
+SET SERVEROUTPUT ON     --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+DECLARE
+ 	CURSOR emp_cursor IS 
+ SELECT empno, ename FROM emp;
+BEGIN	
+	FOR Emp_record IN emp_cursor LOOP   
+		 DBMS_OUTPUT.PUT_LINE(Emp_record.empno|| Emp_record.ename);
+	END LOOP;
 	END;
-
+```
 方法二：最简单方式
-
-	SET SERVEROUTPUT ON      --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	BEGIN	 FOR re IN (SELECT ename FROM EMP)  LOOP
-			DBMS_OUTPUT.PUT_LINE(re.ename)
-		END LOOP;
-	END;
-
+```SQL
+SET SERVEROUTPUT ON      --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+BEGIN	 FOR re IN (SELECT ename FROM EMP)  LOOP
+		DBMS_OUTPUT.PUT_LINE(re.ename)
+	END LOOP;
+END;
+```
 ### 5、利用游标属性做循环条件
 
 【训练1】  使用游标的属性练习。
-
-	SET SERVEROUTPUT ON         --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
-	DECLARE
-	  V_ename VARCHAR2(10);
-	  CURSOR emp_cursor IS 
-	  SELECT ename FROM emp;
-	BEGIN	
-	  OPEN emp_cursor;	 
-	  IF emp_cursor%ISOPEN THEN
-	  LOOP
-	    FETCH emp_cursor INTO v_ename;	        
-	    EXIT WHEN emp_cursor%NOTFOUND;
-	    DBMS_OUTPUT.PUT_LINE(to_char(emp_cursor%ROWCOUNT)||'-'||v_ename);	        END LOOP;
-	  ELSE
-	    DBMS_OUTPUT.PUT_LINE('用户信息：游标没有打开！');
-	  END IF;         
-	  CLOSE  emp_cursor;
-	END;
+```SQL
+SET SERVEROUTPUT ON         --在命令行界面是必须的，在第三方工具的SQL界面中无需此语句
+DECLARE
+  V_ename VARCHAR2(10);
+  CURSOR emp_cursor IS 
+  SELECT ename FROM emp;
+BEGIN	
+  OPEN emp_cursor;	 
+  IF emp_cursor%ISOPEN THEN
+  LOOP
+    FETCH emp_cursor INTO v_ename;	        
+    EXIT WHEN emp_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(to_char(emp_cursor%ROWCOUNT)||'-'||v_ename);	        END LOOP;
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('用户信息：游标没有打开！');
+  END IF;         
+  CLOSE  emp_cursor;
+END;
+```

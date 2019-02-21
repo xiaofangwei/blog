@@ -1,26 +1,25 @@
 ---
 title: Mybatis初识
 date: 2018-02-03 20:55:54
-category: Java
 tags: mybatis
 ---
 <h1>Mybatis详解第一弹——初识</h1>
 
 **Mybatis初识**
-
+*
 	MyBatis是支持普通SQL查询，存储过程和高级映射的优秀持久层框架。MyBatis消除
 	了几乎所有的JDBC代码和参数的手工设置以及对结果集的检索。MyBatis可以使用简单的
 	XML或注解用于配置和原始映射，将接口和Java的POJO（Plain Old Java Objects，普通的
 	Java对象）映射成数据库中的记录。
-<!--more-->
+*
 Mybatis简单使用
 
 1、引入jar包
-
+*
 	mybatis-3.1.1.jar
 	log4j-1.2.16.jar
 	ojdbc5.jar
-
+*
 2、创建数据库和表
 
 为了更简单的创建一个实例，我使用了Oracle的scoot账户，
@@ -50,7 +49,7 @@ Mybatis简单使用
 ```
 4、 创建数据表对应的实体 如：
 
-	Emp.java
+Emp.java
 ```java
 	    public class Emp {
 	        private int empno;

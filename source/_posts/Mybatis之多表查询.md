@@ -1,7 +1,6 @@
 ---
 title: Mybatis之多表查询
 date: 2018-02-03 21:11:27
-category: Java
 tags: mybatis
 ---
 <h1>Mybatis详解第三弹——联表查询</h1>
@@ -45,7 +44,7 @@ tags: mybatis
 c. 定义sql映射文件ClassMapper.xml：
 
 方式一：嵌套查询方式, 通过执行另外一个SQL映射语句来返回预期的复杂类型
-
+```xml
 	<select id="getClasses" parameterType="int" resultMap="ClassesResultMap2">
 	    select * from class where c_id=#{id}
 	</select>
@@ -59,9 +58,9 @@ c. 定义sql映射文件ClassMapper.xml：
 	<select id="getTeacher" parameterType="int" resultType="Teacher">
 	    select t_id id, t_name name from teacher where t_id=#{id}
 	</select>
-
+```
 方式二：嵌套结果：使用嵌套结果映射来处理重复的联合结果的子集
-
+```xml
 	 <select id="getClasses2" parameterType="int" resultMap="ClassesResultMap">
 	        select * from class c,teacher t where c.c_id=#{id} and c.teacher_id=t.t_id; 
 	</select>
@@ -74,7 +73,7 @@ c. 定义sql映射文件ClassMapper.xml：
 	        <result column="t_name" property="name"/>
 	    </association>
 	</resultMap>
-
+```
 d. 测试：
 ```java
 	@Test
@@ -127,7 +126,7 @@ d. 测试：
 3. 定义sql映射文件ClassMapper.xml：(根据classId查询对应的班级信息,包括学生)
 
 集合的嵌套结果：使用嵌套结果映射来处理重复的联合结果的子集
-
+```xml
 	 <select id="getClasses3" parameterType="int" resultMap="ClassesResultMap3">
 	        select * from class c,teacher t, student s where c.c_id=#{id} and c.teacher_id=t.t_id and s.class_id=c.c_id 
 	</select>
@@ -144,9 +143,9 @@ d. 测试：
 	        <result property="name" column="s_name"/>
 	    </collection>
 	</resultMap>
-
+```
 集合的嵌套查询方式, 通过执行另外一个SQL映射语句来返回预期的复杂类型
-
+```xml
 	<select id="getClasses4" parameterType="int" resultMap="ClassesResultMap4">
 	        select * from class c where c.c_id=#{id}
 	</select>
@@ -163,7 +162,7 @@ d. 测试：
 	<select id="getStudentsSelect" parameterType="int" resultType="Student" >
 	    select s_id id, s_name name from student where class_id=#{id}
 	</select>
-
+```
 4. 测试：
 ```java
 	@Test

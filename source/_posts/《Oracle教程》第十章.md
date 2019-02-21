@@ -1,11 +1,9 @@
 ---
 title: 《Oracle教程》第十章
 date: 2017-11-30 21:10:31
-category: Oracle
 tags: oracle
 ---
-# Oracle第十章————建表
-
+# 建表
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
  <!-- more -->
@@ -26,16 +24,16 @@ create table 表名
 如：
 
 --创建出版社表
-
+```SQL
 	create table 出版社（
 		编号 varchar2(2),
 		出版社名称 varchar2(30),
 		地址 varchar2(30),
 		联系电话 varchar2(20)
 	）;
-
+```
 --创建图书表
-
+```SQL
 	create table 图书 (
 		图书编号 VARCHAR2(5),
 		图书名称 VARCHAR2(30),
@@ -45,22 +43,21 @@ create table 表名
 		数量 NUMBER(3),
 		单价 NUMBER(7,2)	
 	);
-
+```
 ## 二、通过子查询建表
 
 步骤1：完全复制图书表到“图书1”
-
-	create table 图书1 as select * from 图书;
-
+```SQL
+create table 图书1 as select * from 图书;
+```
 步骤2：创建新的图书表“图书2”，只包含书名和单价
-
-	create table 图书2（书名，单价） as seelct 图书名称，单价 from 图书；
-
+```SQL
+create table 图书2（书名，单价） as seelct 图书名称，单价 from 图书；
+```
 步骤3：创建新的图书表“图书3”，只包含书名和单价，不复制内容
-
-	create table 图书3（书名，单价） as select 图书名称，单价 from 图书 where 1=2；
-
-
+```SQL
+create table 图书3（书名，单价） as select 图书名称，单价 from 图书 where 1=2；
+```
 ## 三、添加表的约束
 
 <pre>
@@ -98,30 +95,29 @@ create table stumarks(
 
 
 --主键约束
-
-	alter table 出版社 add constraint PK_编号 primary key (编号);
-
+```SQL
+alter table 出版社 add constraint PK_编号 primary key (编号);
+```
 --唯一约束
-
-	alter table 出版社 add constraint UQ_地址 unique (地址);
-
+```SQL
+alter table 出版社 add constraint UQ_地址 unique (地址);
+```
 --检查约束
-
-	alter table 出版社 add constraint CK_联系电话 check (联系电话 like '1%');
-
+```SQL
+alter table 出版社 add constraint CK_联系电话 check (联系电话 like '1%');
+```
 --默认值
-
-	alter table 出版社 modify 地址 default '湘潭';
-
+```SQL
+alter table 出版社 modify 地址 default '湘潭';
+```
 --外键约束
-
-	alter table 图书 add constraint FK_图书编号 foreign key (图书编号) references 出版社(编号);
-
+```SQL
+alter table 图书 add constraint FK_图书编号 foreign key (图书编号) references 出版社(编号);
+```
 --外键约束
-
-	alter table 图书 add constraint FK_图书编号 foreign key (图书编号) references 出版社(编号);
-
-
+```SQL
+alter table 图书 add constraint FK_图书编号 foreign key (图书编号) references 出版社(编号);
+```
 ## 四、查看约束条件
 
 **数据字典`USER_CONSTRAINTS`中包含了当前模式用户的约束条件信息。其中，CONSTRAINTS_TYPE 显示的约束类型为：**
@@ -139,15 +135,16 @@ R：FOREIGN KEY约束。
 *其他信息可根据需要进行查询显示，可用DESCRIBE命令查看`USER_CONSTRAINTS的`结构。*
 
 如:检查表的约束信息：
-
-	SELECT CONSTRAINT_NAME,CONSTRAINT_TYPE,SEARCHCONDITON
-	FROM USER_CONSTRAINTS
-	WHERE TABLE_NAME='图书';
-
+```SQL
+SELECT CONSTRAINT_NAME,CONSTRAINT_TYPE,SEARCHCONDITON
+FROM USER_CONSTRAINTS
+WHERE TABLE_NAME='图书';
+```
 
 ## 五、删除约束条件
-
-	ALTER TABLE 表名 DROP CONSTRAINT 约束名;
+```SQL
+ALTER TABLE 表名 DROP CONSTRAINT 约束名;
+```
 
 ## 六、表的操作
 
@@ -160,20 +157,20 @@ R：FOREIGN KEY约束。
 *可以通过对数据字典`USER_OBJECTS`的查询，显示当前模式用户的所有表。*
 	
 如： 显示当前用户的所有表。
-		
-	SELECT object_name FROM user_objects WHERE object_type='TABLE';
+```SQL
+SELECT object_name FROM user_objects WHERE object_type='TABLE';
+```
 
 ## 七、修改表
 
 ### 1、增加新列:
 
 如： 为“出版社”增加一列“电子邮件”：
-		
-	ALTER TABLE 出版社		
-	ADD 电子邮件 VARCHAR2(30) CHECK(电子邮件 LIKE '%@%');
-
+```SQL
+ALTER TABLE 出版社		
+ADD 电子邮件 VARCHAR2(30) CHECK(电子邮件 LIKE '%@%');
+```
 ### 2、修改列
-	
 修改列定义有以下一些特点：
 
 <pre>
@@ -183,10 +180,11 @@ R：FOREIGN KEY约束。
 (4) 修改列的默认值，只影响以后插入的数据。如：修改“出版社”表“电子邮件”列的宽度为40。
 </pre>	
 
-	ALTER TABLE 出版社 MODIFY 电子邮件 VARCHAR2(40);
-
+```SQL
+ALTER TABLE 出版社 MODIFY 电子邮件 VARCHAR2(40);
+```
 ### 3、删除列
-
 如：删除“出版社”表的“电子邮件”列。
-		
-	ALTER TABLE 出版社 DROP COLUMN 电子邮件;
+```SQL
+ALTER TABLE 出版社 DROP COLUMN 电子邮件;
+```

@@ -1,8 +1,6 @@
 ---
 title: Mysql高版本连接问题
 date: 2017-11-17 21:28:50
-category:
-   易错集锦
 tags: mysql
 ---
 
@@ -13,4 +11,4 @@ tags: mysql
 
 在mysql连接字符串url中加入ssl=true或者false即可，如下所示。
 
-	　　url=jdbc:mysql://127.0.0.1:3306/framework?characterEncoding=utf8&useSSL=true
+**url=jdbc:mysql://127.0.0.1:3306/framework?characterEncoding=utf8&useSSL=true**

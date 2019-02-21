@@ -1,7 +1,6 @@
 ---
 title: Mybatis之CRUD操作
 date: 2018-02-03 21:00:13
-category: Java
 tags: mybatis
 ---
 <h1>Mybatis详解第二弹——编写基于mybatis的操作Emp表的CRUD操作的dao类</h1>
@@ -9,7 +8,7 @@ tags: mybatis
 **用xml配置的方式**
 
 1、定义sql映射的xml文件 如：
-
+```xml
 	id: 是sql语句在xml文件的位置
 	parameterType: 需要传递参数的类型
 	resultType: sql语句执行后返回的类型 
@@ -29,12 +28,13 @@ tags: mybatis
 	<update id="updateByNo" parameterType="com.model.Emp" resultType="int">
 	    update emp set ename=#{ename},job=#{job},... where empno=#{empno} 
 	</update>
-<!--more-->
+```
 2、在mybatis配置文件中注册实体对应的SQL映射
-
+```xml
 	<mappers>
 	    <mapper resource="com/mapper/EmpMapper.xml"/>
 	</mappers>
+	```
 3、在dao中使用
 ```java
 	public Emp getEmpByName(String ename) {

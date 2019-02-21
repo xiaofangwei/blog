@@ -1,12 +1,9 @@
 ---
 title: 《Oracle教程》第五章
 date: 2017-11-25 19:20:38
-category: Oracle
 tags: oracle
 ---
-# Oracle第五章——函数
-
-
+# 函数（二）
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
  <!-- more -->
@@ -16,21 +13,20 @@ tags: oracle
 1、SYSDATE：返回系统日期和时间的虚列函数。
 
 如：返回系统的当前日期。
-
-		SELECT sysdate FROM dual;
-
+```SQL
+SELECT sysdate FROM dual;
+```
 2、对两个日期相减，得到相隔天数。
 
 *通过加小时来增加天数，24小时为一天，如12小时可以写成12/24(或0.5)。*
-
 如：例1 假定当前的系统日期是2003年2月6日，求再过1000天的日期。
-
-		SELECT sysdate+1000 AS "NEW DATE" FROM dual;
-
-   例2：两个日期相减
-
-		 select to_date('1-1月-2000') - to_date('1-8月-1999') from dual;
-
+```SQL
+SELECT sysdate+1000 AS "NEW DATE" FROM dual;
+```
+例2：两个日期相减
+```SQL
+select to_date('1-1月-2000') - to_date('1-8月-1999') from dual;
+```
 3、其它日期函数
 |函数|功能|实例|结果|
 |-|-|-|-|
@@ -41,13 +37,13 @@ tags: oracle
 |round|按指定格式对日期进行四舍五入|round(to_date('13-2月-03'),'YEAR')，round(to_date('13-2月-03'),'MONTH')，round(to_date('13-2月-03'),'DAY')|01-1月-03，01-2月-03，16-2月-03(按周四舍五入)|
 
 如：返回2003年2月的最后一天。
-
-		SELECT last_day('08-2月-03') FROM dual;
-
+```SQL
+SELECT last_day('08-2月-03') FROM dual;
+```
 假定当前的系统日期是2003年2月6日，显示部门10雇员的雇佣天数。
-		
-		SELECT ename, round(sysdate-hiredate) DAYS FROM emp WHERE  deptno = 10;
-
+```SQL
+SELECT ename, round(sysdate-hiredate) DAYS FROM emp WHERE  deptno = 10;
+```
 ## 二、转换函数
 
 |函数|功能|实例|结果|
@@ -57,10 +53,10 @@ tags: oracle
 |To_number|转换成数值类型|To_number('1234.5')|1234.5|
 
 1．自动类型转换
-
-	SELECT '12.5'+11 FROM dual;    //结果为：23.5
-	Select  ‘12.5’||11 from dual;    //结果为：’12.511’
-
+```SQL
+SELECT '12.5'+11 FROM dual;    //结果为：23.5
+SELECT  ‘12.5’||11 FROM dual;    //结果为：’12.511’
+```
 2．日期类型转换
 
 |代码|代表的格式|例子|
@@ -85,19 +81,21 @@ tags: oracle
 如：1、日期型转字符型 
 
 将日期转换成带时间和星期的字符串并显示。
-
-		SELECT TO_CHAR(sysdate,'YYYY-MM-DD HH24:MI:SS AM DY') FROM dual;
+```SQL
+SELECT TO_CHAR(sysdate,'YYYY-MM-DD HH24:MI:SS AM DY') FROM dual;
+```
 
 将日期显示转换成中文的年月日。
-		
-		SELECT TO_CHAR(sysdate,'YYYY"年"MM"月"DD"日"') FROM dual;
+```SQL
+SELECT TO_CHAR(sysdate,'YYYY"年"MM"月"DD"日"') FROM dual;
+```
+2.字符型转日期型
 
- 2.字符型转日期型
-
-   往emp表中插入一条记录
-
-	insert into emp values(8888,'张三','CLERK',7369,to_date('1-1月-2000'),1000,10,10);
-	insert into emp values(8889,'李四','CLERK',7369,to_date('2000-01-01','YYYY-MM-DD'),1000,10,10);
+往emp表中插入一条记录
+```SQL
+insert into emp values(8888,'张三','CLERK',7369,to_date('1-1月-2000'),1000,10,10);
+insert into emp values(8889,'李四','CLERK',7369,to_date('2000-01-01','YYYY-MM-DD'),1000,10,10);
+```
 
 ## 三、其他常用函数
 |函数|功能|实例|结果|
@@ -115,14 +113,16 @@ tags: oracle
 **使用nvl函数，可以转换NULL为实际值。该函数判断字段的内容，如果不为空，返回原值；为空，则返回给定的值。**
 
 如下3个函数，分别用新内容代替字段的空值：
-
-		nvl(comm, 0)：用0代替空的Comm值。
-		nvl(hiredate, '01-1月-97')：用1997年1月1日代替空的雇佣日期。
-		nvl(job, '无')：用“无”代替空的职务。
+```
+nvl(comm, 0)：用0代替空的Comm值。
+nvl(hiredate, '01-1月-97')：用1997年1月1日代替空的雇佣日期。
+nvl(job, '无')：用“无”代替空的职务。
+```
 
 使用nvl函数转换空值。
-		
-		SELECT	ename,nvl(job,'无'),nvl(hiredate,'01-1月-97'),nvl(comm,0) FROM	 emp;
+```SQL
+SELECT	ename,nvl(job,'无'),nvl(hiredate,'01-1月-97'),nvl(comm,0) FROM	 emp;
+```
 
 ### 2．decode函数
 
@@ -130,8 +130,9 @@ tags: oracle
 在参数的最后位置上可以存在单独的参数，如果以上比较过程没有找到匹配值，则返回该参数的值，如果不存在该参数，则返回NULL。*
 
 将职务转换成中文显示。
-		
-		SELECT	ename,decode(job, 'MANAGER', '经理', 'CLERK','职员', 'SALESMAN','推销员', 'ANALYST','系统分析员','未知') FROM emp;
+```SQL
+SELECT	ename,decode(job, 'MANAGER', '经理', 'CLERK','职员', 'SALESMAN','推销员', 'ANALYST','系统分析员','未知') FROM emp;
+```
 
 ### 3．最大、最小值函数
 
