@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第十三章
+title: Oracle笔记 （十三）
 date: 2017-12-05 19:11:04
 tags: oracle
 ---

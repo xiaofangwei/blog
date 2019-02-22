@@ -3,11 +3,11 @@ title: Mybatis-generator之mybatis的快速使用
 date: 2018-02-04 21:17:05
 tags: mybatis
 ---
-<h1>mybatis-generator插件自动生成单表的类和映射文件</h1>
+## mybatis-generator插件自动生成单表的类和映射文件
 
 1、 下载mybatis-generrator插件包
 
-	**mybatis-generator-core-1.3.2**
+**mybatis-generator-core-1.3.2**
 
 目录结构：
 ```

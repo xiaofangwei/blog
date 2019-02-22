@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第一章
+title: Oracle笔记 （一）
 date: 2017-11-21 18:33:44
 tags: oracle
 ---

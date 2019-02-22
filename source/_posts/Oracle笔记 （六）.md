@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第六章
+title: Oracle笔记 （六）
 date: 2017-11-26 19:23:25
 tags: oracle
 ---

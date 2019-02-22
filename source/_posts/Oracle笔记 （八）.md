@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第八章
+title: Oracle笔记 （八）
 date: 2017-11-28 19:10:30
 tags: oracle
 ---

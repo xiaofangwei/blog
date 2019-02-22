@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第十四章
+title: Oracle笔记 （十四）
 date: 2017-12-12 19:38:50
 tags: oracle
 ---

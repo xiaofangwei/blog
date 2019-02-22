@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第七章
+title: Oracle笔记 （七）
 date: 2017-11-27 19:20:34
 tags: oracle
 ---

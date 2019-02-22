@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第二章
+title: Oracle笔记 （二）
 date: 2017-11-22 13:23:45
 tags: oracle
 ---

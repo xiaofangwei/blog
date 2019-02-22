@@ -1,7 +1,6 @@
 ---
 title: 用Java生成二维码
 date: 2018-01-20 20:50:43
-category: Java
 tags: 二维码
 ---
 <h1>java实现二维码开发</h1>

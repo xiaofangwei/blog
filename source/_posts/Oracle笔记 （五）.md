@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第五章
+title: Oracle笔记 （五）
 date: 2017-11-25 19:20:38
 tags: oracle
 ---

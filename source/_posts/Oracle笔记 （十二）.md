@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第十二章
+title: Oracle笔记 （十二）
 date: 2017-12-05 18:40:55
 tags: oracle
 ---

@@ -1,5 +1,5 @@
 ---
-title: 《Oracle教程》第十章
+title: Oracle笔记 （十）
 date: 2017-11-30 21:10:31
 tags: oracle
 ---
