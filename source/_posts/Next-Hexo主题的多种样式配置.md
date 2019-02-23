@@ -103,4 +103,4 @@ tags: hexo-next
 	   fireworks: true
 ```
 更多的请参考
-[https://segmentfault.com/a/1190000009544924#articleHeader21](https://segmentfault.com/a/1190000009544924#articleHeader21)
+[Net主题配置](https://segmentfault.com/a/1190000009544924#articleHeader21)
