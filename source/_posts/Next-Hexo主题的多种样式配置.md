@@ -3,11 +3,6 @@ title: Next | Hexo主题的多种样式配置
 date: 2018-03-17 11:58:50
 tags: hexo-next 
 ---
-<h1> Next | Hexo主题的多种样式配置 </h1>
-
-![](https://github.com/No-Sky/storage/raw/master/images/timg.jpg)
-
-<!--more-->
 # 添加404界面
 
 在source文件夹新建404.html，内容如下：
@@ -107,4 +102,5 @@ tags: hexo-next
 	# Fireworks
 	   fireworks: true
 ```
-。。。先写这么多了，有时间再慢慢写
+更多的请参考
+[https://segmentfault.com/a/1190000009544924#articleHeader21](https://segmentfault.com/a/1190000009544924#articleHeader21)

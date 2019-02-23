@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Xiao FangWei Blog
-subtitle: 
+title: Xiao FangWei`s Blog
+subtitle: 凉风有信，秋月无边
 author: Xiao FangWei
 language: zh
 timezone:
@@ -122,6 +122,28 @@ time_format: HH:mm:ss
 ## Set per_page to 0 to disable pagination
 per_page: 8
 pagination_dir: page
+
+# Security
+##
+encrypt:
+  enable: true
+
+# 网站宠物
+##
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  model:
+    use: live2d-widget-model-shizuku
+  display:
+    position: right
+    width: 75
+    height: 150
+  mobile:
+    show: true
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
