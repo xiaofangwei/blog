@@ -4,7 +4,7 @@
 
 # Site
 title: Xiao FangWei`s Blog
-subtitle: 凉风有信，秋月无边
+subtitle: 路漫漫其修远兮，吾将上下而求索
 author: Xiao FangWei
 language: zh
 timezone:
@@ -48,9 +48,6 @@ friends: [
     },{
         title: "Xiaotao's Page",
         href: "http://niexiaotao.com"
-    },{
-        title: "It helps SEO",
-        href: "#"
     }
 ]
 
