@@ -7,7 +7,7 @@ date: 2018-09-12 12:19:49
 
 ##   文档下载
 
-​        ● [肖方伟的简历.pdf](https://github.com/No-Sky/storage/raw/master/docs/%E8%82%96%E6%96%B9%E4%BC%9F%E7%9A%84%E7%AE%80%E5%8E%86.pdf)
+​        ● [肖方伟的简历.pdf](https://github.com/No-Sky/storage/raw/master/docs/%E8%82%96%E6%96%B9%E4%BC%9F%E7%9A%84%E7%AE%80%E5%8E%86_java%E5%90%8E%E7%AB%AF.pdf)
 
 ​        ● [肖方伟的简历.doc](https://github.com/No-Sky/storage/raw/master/docs/%E8%82%96%E6%96%B9%E4%BC%9F%E7%9A%84%E7%AE%80%E5%8E%86.doc)
 
@@ -67,11 +67,17 @@ date: 2018-09-12 12:19:49
 
 完成了手机端网页的编码，后端接口的设计与编码、数据库设计 
 
-项目链接: [http://47.95.214.195 ](http://47.95.214.195 )
+项目链接:
+
+ [http://104.248.189.213](http://104.248.189.213 )
+
+[http://35.241.72.59](http://35.241.72.59)
 
  
 
 ##  社交主页 
+
+​	● [http://github.com/no-sky ](http://github.com/no-sky)
 
 ​	● [http://blog.xiaofangwei.cn ](http://blog.xiaofangwei.cn)
 

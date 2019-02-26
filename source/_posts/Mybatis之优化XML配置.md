@@ -1,6 +1,7 @@
 ---
 title: Mybatis之优化XML配置
 date: 2018-02-03 21:04:38
+top: 1
 tags: mybatis
 ---
 <h1>Mybatis详解第三弹——优化xml配置使用</h1>
@@ -32,7 +33,7 @@ tags: mybatis
         url=jdbc:oracle:thin:@127.0.0.1:1521:ORCL
         username=scott
         password=tiger
-```
+ ```
 
 改：
 
@@ -118,7 +119,7 @@ b. 定义实体类：
         private String orderNo;
         private float price;
     }
-    ```
+```
 c. 实现getOrderById(id)的查询
 
 * c1. 通过在sql语句中定义别名

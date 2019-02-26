@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （一）
 date: 2017-11-21 18:33:44
+top: 1
 tags: oracle
 ---
 # 配置Oracle

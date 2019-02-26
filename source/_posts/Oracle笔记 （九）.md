@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （九）
 date: 2017-11-29 18:49:15
+top: 1
 tags: oracle
 ---
 # 表的增删改操作

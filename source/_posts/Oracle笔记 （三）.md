@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （三）
 date: 2017-11-23 18:48:46
+top: 1
 tags: oracle
 ---
 # Oracle的基本查询
@@ -16,7 +17,7 @@ tags: oracle
 &nbsp;&nbsp;&nbsp;&nbsp;order by 排序列 asc[desc]
 
 如：查询部门10的雇员
-	
+​	
 ```SQL
 select * from emp where deptno=10;
 ```
@@ -35,10 +36,10 @@ select * from emp where rownum<=3;
 ```
 ## 三、查询进行计算
 如：显示雇员工资上浮20%的结果
-	select ename,sal,sal*(1+20%) from emp;
+​	select ename,sal,sal*(1+20%) from emp;
 如：显示每个员工的总工资（工资+奖金）
-	update emp set comm = o where comm is null;    //因为null的特殊性，它与任何值运算都等于null，所以先要把它更新为0，后面我们会学到一个函数来处理null值
-	select ename,sal+comm from emp;
+​	update emp set comm = o where comm is null;    //因为null的特殊性，它与任何值运算都等于null，所以先要把它更新为0，后面我们会学到一个函数来处理null值
+​	select ename,sal+comm from emp;
 ## 四、使用别名
 如：在查询中使用列别名
 ```SQL

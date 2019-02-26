@@ -1,6 +1,7 @@
 ---
 title: Mybatis-generator之mybatis的快速使用
 date: 2018-02-04 21:17:05
+top: 1
 tags: mybatis
 ---
 ## mybatis-generator插件自动生成单表的类和映射文件

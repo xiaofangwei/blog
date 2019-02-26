@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （十）
 date: 2017-11-30 21:10:31
+top: 1
 tags: oracle
 ---
 # 建表
@@ -124,11 +125,11 @@ alter table 图书 add constraint FK_图书编号 foreign key (图书编号) ref
 
 <pre>		
 C：CHECK约束。
-		
+
 P：PRIMARY KEY约束。
-		
+​		
 U：UNIQUE约束。
-		
+​		
 R：FOREIGN KEY约束。
 </pre>	
 
@@ -155,7 +156,7 @@ ALTER TABLE 表名 DROP CONSTRAINT 约束名;
 </pre>
 
 *可以通过对数据字典`USER_OBJECTS`的查询，显示当前模式用户的所有表。*
-	
+​	
 如： 显示当前用户的所有表。
 ```SQL
 SELECT object_name FROM user_objects WHERE object_type='TABLE';

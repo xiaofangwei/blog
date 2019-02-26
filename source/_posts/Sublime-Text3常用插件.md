@@ -1,6 +1,7 @@
 ---
 title: Sublime Text3常用插件
 date: 2018-03-19 17:47:28
+top: 1
 tags: Sublime Text3
 ---
 # ChineseLocalizations
@@ -54,7 +55,7 @@ tags: Sublime Text3
    **功能：文件路径补全**
 
    **简介：文件名输入补全，例如图片路径**
- 
+
    **使用：输入"/"即可看到本项目文件夹的其他文件**
 
    ![]()

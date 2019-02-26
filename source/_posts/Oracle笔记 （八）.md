@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （八）
 date: 2017-11-28 19:10:30
+top: 1
 tags: oracle
 ---
 # 子查询、集合运算

@@ -1,6 +1,7 @@
 ---
 title: Mysql高版本连接问题
 date: 2017-11-17 21:28:50
+top: 1
 tags: mysql
 ---
 

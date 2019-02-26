@@ -2,10 +2,10 @@
 title: for you
 date: 2019-02-24 10:15:55
 tags: 知行录
-top: 999
+top: -1
 password: wangwanting
 abstract: If you are my favorite person, please enter your name.
-message: If you are my favorite person, please enter your name.2019
+message: If you are my favorite person, please enter your name.
 ---
 
 > 2019年2月24日凌晨，辗转反侧，难以入睡。于是把已经藏了很久的的喜欢诉说出来

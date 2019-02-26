@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （七）
 date: 2017-11-27 19:20:34
+top: 1
 tags: oracle
 ---
 # 多表连接（二）、组函数、分组查询
@@ -84,4 +85,3 @@ select job 职务, sum(sal) 工资总和 from emp group by job order by sum(sal)
 ```SQL
 select max(avg(sal)) from emp group by deptno;
 ```
-	

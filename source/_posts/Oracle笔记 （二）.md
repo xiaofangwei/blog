@@ -1,13 +1,14 @@
 ---
 title: Oracle笔记 （二）
 date: 2017-11-22 13:23:45
+top: 1
 tags: oracle
 ---
 # 使用Oracl创建表空间、用户
 ![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
 
  <!-- more -->
- 
+
 ## 一、 创建表空间
 
 （在SqlServer中称为创建一个是数据库，而在Oracle中则称为创建一个表空间）

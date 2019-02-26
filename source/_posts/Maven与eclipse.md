@@ -1,22 +1,23 @@
 ---
 title: Maven与eclipse
 date: 2018-04-04 22:23:49
+top: 1
 tags: Maven
 ---
 <h1>Maven配置与eclipse配置Maven仓库</h1>
 
 # 下载与安装
-	
+
 1、前往 https://maven.apache.org/download.cgi 下载最新版的Maven程序：
 
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/mavendownload.png)
 <!-- more -->
 2、将文件解压到F:\Program Files\Apache\apache-maven-3.5.3（此处是我的安装路径）目录下:
-	
+​	
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/maveninstaller.png)
 
 3、新建环境变量MAVEN_HOME，赋值F:\Program Files\Apache\apache-maven-3.5.3
-	
+​	
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/mavenpath1.png)
 
 4、编辑环境变量Path，追加`%MAVEN_HOME%\bin\;`
@@ -24,7 +25,7 @@ tags: Maven
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/mavenpath2.png)
 
 5、至此，maven已经完成了安装，我们可以通过DOS命令检查一下我们是否安装成功
-	
+​	
 	mvn -v
 
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/mavenversion.png)
@@ -34,7 +35,7 @@ tags: Maven
 1、在F:\Program Files\Apache\目录下新建maven-repository文件夹，该目录用作maven的本地库。
 
 2、打开F:\Program Files\Apache\apache-maven-3.5.3\conf\settings.xml文件，查找下面这行代码：
-	
+​	
 	<localRepository>/path/to/local/repo</localRepository>
 *localRepository节点默认是被注释掉的，需要把它移到注释之外，然后将localRepository节点的值改为我们在3.1中创建的目录F:\Program Files\Apache\maven-repository*
 

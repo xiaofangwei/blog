@@ -1,6 +1,7 @@
 ---
 title: Next | Hexo主题的多种样式配置
 date: 2018-03-17 11:58:50
+top: 1
 tags: hexo-next 
 ---
 # 添加404界面

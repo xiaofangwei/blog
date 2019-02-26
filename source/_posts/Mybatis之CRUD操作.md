@@ -1,6 +1,7 @@
 ---
 title: Mybatis之CRUD操作
 date: 2018-02-03 21:00:13
+top: 1
 tags: mybatis
 ---
 <h1>Mybatis详解第二弹——编写基于mybatis的操作Emp表的CRUD操作的dao类</h1>
@@ -34,7 +35,7 @@ tags: mybatis
 	<mappers>
 	    <mapper resource="com/mapper/EmpMapper.xml"/>
 	</mappers>
-	```
+```
 3、在dao中使用
 ```java
 	public Emp getEmpByName(String ename) {
@@ -71,7 +72,7 @@ tags: mybatis
 	<mappers>
 	    <mapper resource="com/mapper/EmpMapper.xml"/>
 	</mappers>
-	
+
 3、在dao中使用
 ```java
 	public Emp getEmpByName(String ename) {

@@ -1,6 +1,7 @@
 ---
 title: Oracle笔记 （十四）
 date: 2017-12-12 19:38:50
+top: 1
 tags: oracle
 ---
 # 游标、存储过程
@@ -94,7 +95,7 @@ END;
 begin
 	EMP_LIST;
 end;
-```		
+```
 ### 参数传递
 a.输入参数: 参数名  IN 数据类型 DEFAULT 值；
 
@@ -138,7 +139,7 @@ BEGIN
 	EMP_COUNT(V_EMPCOUNT);
 	DBMS_OUTPUT.PUT_LINE('雇员总人数为：'||V_EMPCOUNT);
 END;
- ``` 
+```
  c.输入输出参数： 参数名  IN OUT   数据类型   DEFAULT   值；
 
 --例：使用IN OUT类型的参数，给电话号码增加区码。
