@@ -45,9 +45,6 @@ friends: [
     {
         title: "aqqje",
         href: "http://aqqje.com/"
-    },{
-        title: "Xiaotao's Page",
-        href: "http://niexiaotao.com"
     }
 ]
 
@@ -83,6 +80,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archive
 category_dir: categories
+picture_dir: picture
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -142,10 +140,21 @@ live2d:
   mobile:
     show: true
 
+# index2 generator是否包含官方的hexo-generator-index，默认true（包含）
+index2_include_index: true
+index2_generator:
+  - layout: 'archive' # use existing archive layout
+    path: '/archive/' 
+    per_page: 8
+    order_by: -date # 按发布时间排序
+    exclude:
+      - tag 人生 # 不包含标签为hide的文章
+      #- category hide # 不包含分类为hide的文章
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-aircloud
+theme: fexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
