@@ -14,7 +14,7 @@ keywords:
 
 home_nav:
   - name: Blog
-    url: /archive/
+    url: /archives
     target_blank: false #不在新页面打开
   - name: Github
     url: https://github.com/no-sky
@@ -25,7 +25,7 @@ home_nav:
 # config page nav
 page_nav:
   - name: 博客
-    url: /archive/
+    url: /archives/
     target_blank: false # 不在新页面打开
   - name: 标签
     url: /tag/

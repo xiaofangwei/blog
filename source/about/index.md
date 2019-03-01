@@ -1,4 +1,4 @@
 ---
-layout: "about"
-title: "About"
+layout: about
+title: 关于
 ---
