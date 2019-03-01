@@ -6,7 +6,7 @@
 title: Xiao FangWei`s Blog
 subtitle: 路漫漫其修远兮，吾将上下而求索
 author: Xiao FangWei
-language: zh
+language: en
 timezone:
 
 # URL
@@ -29,24 +29,24 @@ keyword: ""
 # 一些社交平台地址，支持以下几种：
 #weibo_username:     
 #zhihu_username:     
-github_username:    No-Sky
+github_username: No-Sky
 #twitter_username:   
 #facebook_username:  
 #linkedin_username:  
 
 # Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-sidebar-avatar: imgs/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+# sidebar-avatar: imgs/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Friends
 # 友情链接
-friends: [
-    {
-        title: "aqqje",
-        href: "http://aqqje.com/"
-    }
-]
+# friends: [
+#     {
+#         title: "aqqje",
+#         href: "http://aqqje.com/"
+#     }
+# ]
 
 #comment:
 #  type: gitment
@@ -75,14 +75,14 @@ post_style:
 
 # Custom Setting End
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archive
-category_dir: categories
-picture_dir: picture
-code_dir: downloads/code
-i18n_dir: :lang
+# source_dir: source
+# public_dir: public
+# tag_dir: tags
+# archive_dir: archive
+# category_dir: categories
+# picture_dir: picture
+# code_dir: downloads/code
+# i18n_dir: :lang
 skip_render: css/*
 
 # Writing
@@ -102,9 +102,9 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# default_category: uncategorized
+# category_map:
+# tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -140,7 +140,7 @@ live2d:
   mobile:
     show: true
 
-# index2 generator是否包含官方的hexo-generator-index，默认true（包含）
+# 首页文章排序插件 index2 generator是否包含官方的hexo-generator-index，默认true（包含）
 index2_include_index: true
 index2_generator:
   - layout: 'archive' # use existing archive layout
@@ -150,6 +150,28 @@ index2_generator:
     exclude:
       - tag 人生 # 不包含标签为hide的文章
       #- category hide # 不包含分类为hide的文章
+
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    #- '**/index.js'
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
