@@ -19,7 +19,9 @@ home_nav:
   - name: Github
     url: https://github.com/no-sky
     target_blank: true #在新页面打开
-
+  - name: Timeline
+    url: /picture/
+    target_blank: false
 # config page nav
 page_nav:
   - name: 博客
@@ -33,9 +35,6 @@ page_nav:
     target_blank: false
   - name: 关于
     url: /about/
-    target_blank: false
-  - name: 图册
-    url: /picture/
     target_blank: false
   #- name: RSS
   #  url: /atom.xml
@@ -58,7 +57,7 @@ toolbox:
 
 search_slogan:
   isShow: true # true|fase
-  text: Can you find the bug of world ~
+  text: 世界之大，搜索可达 ~
 
 link_slogan:
   isShow: true # true|fase
@@ -82,10 +81,10 @@ donation:
   items:
     - type: 微信
       text: 微信扫一扫
-      imgUrl: /images/qr-wechat.png
+      imgUrl: /imgs/qr-wechat.png
     - type: 支付宝
       text: 支付宝扫一扫
-      imgUrl: /images/qr-alipay.png
+      imgUrl: /imgs/qr-alipay.png
 
 
 
@@ -191,7 +190,7 @@ about:
     text_value:
     - "分享知识，分享乐趣"
     - "性喜静，却好运动"
-    - "后端开发工程师，常用 Java"
+    - "擅后端开发，常用 Java"
   - type: Github
     icon: icon-github
     text_key: Github
@@ -210,7 +209,10 @@ link:
     info: 相见亦无事，不遇长相思！
     url: http://aqqje.com/
     avatar: https://github.com/aqqje/Personal-repository/raw/master/aqqje/avater.jpg
-
+  - name: Forsigner
+    info: Find the bug of the world (感谢Fexo主题设计者)
+    url: http://forsigner.com/
+    avatar: http://forsigner.com/images/avatar.jpg
 
 #project:
   # - type: personal
