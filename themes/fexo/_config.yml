@@ -189,7 +189,7 @@ about:
     icon: icon-user
     text_value:
     - "分享知识，分享乐趣"
-    - "性喜静，却好运动"
+    - "己所不欲，勿施于人"
     - "擅后端开发，常用 Java"
   - type: Github
     icon: icon-github
@@ -209,11 +209,14 @@ link:
     info: 相见亦无事，不遇长相思！
     url: http://aqqje.com/
     avatar: https://github.com/aqqje/Personal-repository/raw/master/aqqje/avater.jpg
-  - name: Forsigner
-    info: Find the bug of the world (感谢Fexo主题设计者)
+  - name: Forsigner(感谢Fexo主题设计者)
+    info: Find the bug of the world 
     url: http://forsigner.com/
     avatar: http://forsigner.com/images/avatar.jpg
-
+  - name: 阁子
+    info: 多可喜，亦多可悲
+    url: https://newdee.cf
+    avatar: https://newdee.cf/images/favo.jpg
 #project:
   # - type: personal
   #   name: fexo
