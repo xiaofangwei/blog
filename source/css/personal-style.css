@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: normal;
 } */
-html.page-home {
+html.page-home, html.light {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,6 +42,7 @@ html.page-home {
     background-repeat: no-repeat;
     background-attachment:fixed;
   }
+  /*手机端友链slogan样式调整*/
   .content.content-link .tip {
     margin: 20px 0 0 0px;
     color: #8a9d9e;
@@ -50,6 +51,7 @@ html.page-home {
     color: #8a9d9e;
   }
 }
+/*文章排版样式调整*/
 .page-header {
   background: rgba(0,0,0,0);
 }
@@ -62,45 +64,54 @@ html.page-home {
 .article-meta span {
   background-color: 
 }
+article hr {
+  max-width: 100%;
+  margin: 20px 0;
+  height: 3px;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(-45deg,#fff,#fff 4px,transparent 4px,transparent 8px);
+}
 .article-content blockquote {
-    margin: 0;
-    padding: 6px 6px;
-    color: #555;
-    border-left: 4px solid #ccc;
-    background: #fafafa;
+  margin: 0;
+  padding: 6px 6px;
+  color: #555;
+  border-left: 4px solid #ccc;
+  background: #fafafa;
 }
 blockquote {
-    margin: .1em 6px;
-    padding: .5em 6px;
-    border-left: 5px solid #789;
-    background-color: rgba(245,245,245,.5);
-    position: relative;
-    quotes: "\201C" "\201D" "\2018" "\2019";
+  margin: .1em 6px;
+  padding: .5em 6px;
+  border-left: 5px solid #789;
+  background-color: rgba(245,245,245,.5);
+  position: relative;
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 blockquote:before {
-    color: #ccc;
-    content: "\201C";
-    font-size: 3em;
-    left: 5px;
-    top: .3em;
-    line-height: .1em;
-    margin-right: .25em;
-    vertical-align: -.4em;
+  color: #ccc;
+  content: "\201C";
+  font-size: 3em;
+  left: 5px;
+  top: .3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
 }
 blockquote p {
-    display: inline;
-    margin: 0 0 25px 0;
+  display: inline;
+  margin: 0 0 25px 0;
 }
 p {
   color: #404040;
-    font-size: 14px;
-    line-height: 30px;
-    text-indent: 2em;
-    letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 30px;
+  text-indent: 2em;
+  letter-spacing: 1px;
 }
 /* .article-content p {
   background-color: rgba(0,0,0,0.1);
 }  */
+/*手机端toolbox样式调整*/
 .toolbox-mobile {
   font-size: 14px;
   top: 12px;
@@ -124,6 +135,24 @@ p {
   font-size: 14px;
   background: #a7f2f7;
 }
+/*加密插件密码输入框颜色适配*/
 .hbe-input-container input, .hbe-input-container label {
     background-color: rgba(0,0,0,0);
+}
+/*archive页面toolbox菜单按钮调节*/
+.toolbox {
+  width: 40px;
+}
+.toolbox .list-toolbox .item-toolbox {
+  margin-left: 6px;
+}
+/*文章页面toolbox菜单按钮调节*/
+.post-header .toolbox {
+  background-color: rgba(0,0,0,0);
+}
+.post-header .toolbox .list-toobox {
+  left: 42px;
+}
+.post-header .toolbox .list-toobox .item-toolbox {
+  margin-left: 6px;
 }

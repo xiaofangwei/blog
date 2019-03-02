@@ -10,7 +10,7 @@ avatar: /imgs/avatar.png
 favicon: /imgs/favicon.ico
 
 # For seo
-keywords: 
+keywords: xiaofangwei, Xiao FangWei, Java, 后端开发
 
 home_nav:
   - name: Blog
@@ -213,7 +213,7 @@ link:
     info: Find the bug of the world 
     url: http://forsigner.com/
     avatar: http://forsigner.com/images/avatar.jpg
-  - name: 阁子
+  - name: 阁子(本博客的一些设计来源者)
     info: 多可喜，亦多可悲
     url: https://newdee.cf
     avatar: https://newdee.cf/images/favo.jpg
