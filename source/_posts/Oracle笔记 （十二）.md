@@ -1,14 +1,10 @@
 ---
 title: Oracle笔记 （十二）
 date: 2017-12-05 18:40:55
-top: 1
+comments: false
 tags: oracle
 ---
 # 索引、同义词、数据库链接、PL/SQL语句
-
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 
 ## 一、索引
 

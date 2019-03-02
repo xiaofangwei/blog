@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （三）
 date: 2017-11-23 18:48:46
-top: 1
+comments: false
 tags: oracle
 ---
 # Oracle的基本查询
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
- <!-- more -->
-
 ## 一、基本查询
 *select格式：*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;select 列名 from 表名 ；

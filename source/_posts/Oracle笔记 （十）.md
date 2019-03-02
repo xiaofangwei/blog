@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （十）
 date: 2017-11-30 21:10:31
-top: 1
+comments: false
 tags: oracle
 ---
 # 建表
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 
 ## 一、建表
 

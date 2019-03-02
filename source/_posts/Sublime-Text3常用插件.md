@@ -1,7 +1,7 @@
 ---
 title: Sublime Text3常用插件
 date: 2018-03-19 17:47:28
-top: 1
+comments: false
 tags: Sublime Text3
 ---
 # ChineseLocalizations

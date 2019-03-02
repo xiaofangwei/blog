@@ -1,7 +1,7 @@
 ---
 title: Mybatis之优化XML配置
 date: 2018-02-03 21:04:38
-top: 1
+comments: false
 tags: mybatis
 ---
 <h1>Mybatis详解第三弹——优化xml配置使用</h1>

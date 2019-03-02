@@ -1,8 +1,8 @@
 ---
 title: Git连接github超时问题解决方案
 date: 2018-03-17 11:24:34
-top: 1
 tags: git 超时
+comments: false
 ---
 因为电脑重新装了几次了导致  Git连接github时出现 了超时问题 ，如下：
 ``ssh: connect to host github.com port 22: Connection timed out    #使用ssh连接github时,出现timeout``

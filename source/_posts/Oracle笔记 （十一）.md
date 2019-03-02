@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （十一）
 date: 2017-12-02 17:43:26
-top: 1
+comments: false
 tags: oracle
 ---
 # 分区、视图
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 
 ## 一、分区表
 

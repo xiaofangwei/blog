@@ -1,14 +1,10 @@
 ---
 title: Oracle笔记 （十三）
 date: 2017-12-05 19:11:04
-top: 1
+comments: false
 tags: oracle
 ---
 # PL/SQL空值语句、游标
-
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 
 ## 一、IF语句
 

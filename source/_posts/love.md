@@ -2,6 +2,7 @@
 title: love
 date: 2019-02-26 13:23:16
 tags: 人生
+comments: false
 password: wangwanting
 abstract: If you are my favorite person, please enter your name.
 message: If you are my favorite person, please enter your name.

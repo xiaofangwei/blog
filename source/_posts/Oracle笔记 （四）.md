@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （四）
 date: 2017-11-24 18:02:50
-top: 1
+comments: false
 tags: oracle
 ---
 # 条件查询、函数（一）
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 
 ## 一、 条件查询
 **1、模糊查询(between、in、like)**

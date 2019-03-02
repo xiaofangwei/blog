@@ -1,7 +1,7 @@
 ---
 title: Maven与eclipse
 date: 2018-04-04 22:23:49
-top: 1
+comments: false
 tags: Maven
 ---
 <h1>Maven配置与eclipse配置Maven仓库</h1>
@@ -26,7 +26,7 @@ tags: Maven
 
 5、至此，maven已经完成了安装，我们可以通过DOS命令检查一下我们是否安装成功
 ​	
-	mvn -v
+​	mvn -v
 
 ![](https://github.com/No-Sky/storage/raw/master/images/maven/mavenversion.png)
 
@@ -36,7 +36,7 @@ tags: Maven
 
 2、打开F:\Program Files\Apache\apache-maven-3.5.3\conf\settings.xml文件，查找下面这行代码：
 ​	
-	<localRepository>/path/to/local/repo</localRepository>
+​	<localRepository>/path/to/local/repo</localRepository>
 *localRepository节点默认是被注释掉的，需要把它移到注释之外，然后将localRepository节点的值改为我们在3.1中创建的目录F:\Program Files\Apache\maven-repository*
 
 3、localRepository节点用于配置本地仓库，本地仓库其实起到了一个缓存的作用，它的默认地址是 C:\Users\用户名.m2。

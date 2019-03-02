@@ -2,6 +2,7 @@
 title: for you
 date: 2019-02-24 10:15:55
 tags: 人生
+comments: false
 password: wangwanting
 abstract: If you are my favorite person, please enter your name.
 message: If you are my favorite person, please enter your name.

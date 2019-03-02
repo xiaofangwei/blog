@@ -1,14 +1,10 @@
 ---
 title: Oracle笔记 （一）
 date: 2017-11-21 18:33:44
-top: 1
+comments: false
 tags: oracle
 ---
 # 配置Oracle
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
-
  1 首先打开Oracle服务
 
  2 配置监听器（这个是因为教室的电脑Oracle安装有问题，没有配置好监听器）<br>

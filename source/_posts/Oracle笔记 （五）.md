@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （五）
 date: 2017-11-25 19:20:38
-top: 1
+comments: false
 tags: oracle
 ---
-# 函数（二）
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
+# 函数（二
 ## 一、日期型函数
 **Oracle使用内部数字格式来保存时间和日期，包括世纪、年、月、日、小时、分、秒。缺省日期格式为 DD-MON-YY，如“08-05月-03”代表2003年5月8日。**
 

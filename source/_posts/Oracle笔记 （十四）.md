@@ -1,12 +1,11 @@
 ---
 title: Oracle笔记 （十四）
 date: 2017-12-12 19:38:50
-top: 1
+comments: false
 tags: oracle
 ---
 # 游标、存储过程
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
- <!-- more -->
+
 ##一、游标参数的传递
 例：
 ```SQL

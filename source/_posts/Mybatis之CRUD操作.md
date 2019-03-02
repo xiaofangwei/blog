@@ -1,7 +1,7 @@
 ---
 title: Mybatis之CRUD操作
 date: 2018-02-03 21:00:13
-top: 1
+comments: false
 tags: mybatis
 ---
 <h1>Mybatis详解第二弹——编写基于mybatis的操作Emp表的CRUD操作的dao类</h1>

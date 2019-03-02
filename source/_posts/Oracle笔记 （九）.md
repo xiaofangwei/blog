@@ -1,13 +1,10 @@
 ---
 title: Oracle笔记 （九）
 date: 2017-11-29 18:49:15
-top: 1
+comments: false
 tags: oracle
 ---
 # 表的增删改操作
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
 ## 一、增删改
 增： `insert into 表名(列名) values (值)；`
 

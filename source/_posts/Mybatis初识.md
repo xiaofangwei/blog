@@ -1,7 +1,7 @@
 ---
 title: Mybatis初识
 date: 2018-02-03 20:55:54
-top: 1
+comments: false
 tags: mybatis
 ---
 <h1>Mybatis详解第一弹——初识</h1>

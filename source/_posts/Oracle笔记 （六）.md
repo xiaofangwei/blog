@@ -1,14 +1,9 @@
 ---
 title: Oracle笔记 （六）
 date: 2017-11-26 19:23:25
-top: 1
+comments: false
 tags: oracle
 ---
-# 多表连接（一）
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
-
 ## 一、相等连接
 
 ### 1、三个步骤

@@ -1,7 +1,7 @@
 ---
 title: Mybatis之多表查询
 date: 2018-02-03 21:11:27
-top: 1
+comments: false
 tags: mybatis
 ---
 <h1>Mybatis详解第三弹——联表查询</h1>

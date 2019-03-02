@@ -1,14 +1,10 @@
 ---
 title: Oracle笔记 （七）
 date: 2017-11-27 19:20:34
-top: 1
+comments: false
 tags: oracle
 ---
 # 多表连接（二）、组函数、分组查询
-![](https://github.com/No-Sky/storage/raw/master/images/Logo/OracleLogo1.jpg)
-
- <!-- more -->
-
 ## 一、不等连接
 
 **拿一个表作为另一表的查询条件或范围**
