@@ -77,7 +77,7 @@ backtop:
 donation:
   show: false
   btn_text: 支持一下
-  tip: 扫一扫，支持Xiao FangWei
+  tip: 扫一扫，支持创作
   items:
     - type: 微信
       text: 微信扫一扫
@@ -92,7 +92,7 @@ donation:
 post:
   header_align: CENTER # LEFT|CENTER
   showToc: true # true|false
-  showComments: true
+  showComments: false
   open_in_new_window: false
   show_prev_next: true
 
@@ -213,10 +213,11 @@ link:
     info: Find the bug of the world 
     url: http://forsigner.com/
     avatar: http://forsigner.com/images/avatar.jpg
-  - name: 阁子(本博客的一些设计来源者)
+  - name: 阁子(博客魔改的启发者)
     info: 多可喜，亦多可悲
     url: https://newdee.cf
     avatar: https://newdee.cf/images/favo.jpg
+
 #project:
   # - type: personal
   #   name: fexo

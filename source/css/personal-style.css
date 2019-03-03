@@ -133,14 +133,24 @@ p {
 .post-header .toolbox .list-toobox .item-toolbox {
   margin-left: 6px;
 }
+/* post页面博客名与slogan样式 */
+.page-header .box-blog-info .info {
+  margin-left: 10px;
+}
+/* 友链邮箱图标 */
+.content.content-link .tip .icon-mail {
+    color: #666;
+  }
 /* page页面评论样式 */
 @media screen and (min-width: 768px){
   .fexo-comments {
     width: 760px;
   }
 }
+/* valine评论插件样式 */
 .vcomment {
   background-color: rgba(134, 202, 202, 0.2);
+  /*background-color: rgba(241, 226, 122, 0.5);*/
 }
 /*手机端样式*/
 @media screen and (max-width: 450px) {
