@@ -32,9 +32,6 @@ html.page-home, html.light {
 .page-header {
   background: rgba(0,0,0,0);
 }
-.content {
-  border: 0;
-}
 .content .post-list-box ul {
   margin-left: 16px;
 }
@@ -123,6 +120,10 @@ p {
 .toolbox .list-toolbox .item-toolbox {
   margin-left: 6px;
 }
+/*面包屑导航文字*/
+.page-header .breadcrumb .location {
+    color: #6d774b;
+}
 /*文章页面toolbox菜单按钮调节*/
 .post-header .toolbox {
   background-color: rgba(0,0,0,0);
@@ -139,18 +140,25 @@ p {
 }
 /* 友链邮箱图标 */
 .content.content-link .tip .icon-mail {
-    color: #666;
-  }
-/* page页面评论样式 */
-@media screen and (min-width: 768px){
-  .fexo-comments {
-    width: 760px;
-  }
+  color: #666;
 }
 /* valine评论插件样式 */
 .vcomment {
   background-color: rgba(134, 202, 202, 0.2);
   /*background-color: rgba(241, 226, 122, 0.5);*/
+}
+@media screen and (min-width: 768px){
+  /* page页面评论样式 */
+  .fexo-comments {
+    width: 760px;
+  }
+  /*内容引导线*/
+  .content {
+    border-left: 4px solid #ccd075;
+  }
+  .content .post-list-box ul {
+    margin-left: 0px;
+  }
 }
 /*手机端样式*/
 @media screen and (max-width: 450px) {
@@ -167,6 +175,10 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
+  }
+  /*内容边框*/
+  .content {
+    border: 0;
   }
   /*手机端友链slogan样式调整*/
   .content.content-link .tip {

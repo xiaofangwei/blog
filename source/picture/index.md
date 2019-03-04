@@ -14,7 +14,9 @@ comments: true
 
 # 2019/3/2
 > 调整了博客的一些样式细节，强烈推荐这个博客主题[Fexo](https://github.com/forsigner/fexo)，简洁，精致，还可以自定义样式，很赞。
-> ![Blog主页截图.png](https://i.loli.net/2019/03/02/5c7a3d0f70868.png)
+> ![kOKviF.png](https://s2.ax1x.com/2019/03/04/kOKviF.png)
+> ![kOKxG4.png](https://s2.ax1x.com/2019/03/04/kOKxG4.png)
+> ![kOMkdK.png](https://s2.ax1x.com/2019/03/04/kOMkdK.png)
 
 # 2019/3/1
 > 在群里面发现了一首诗，这首名声广大，可是却难有迎合之时，分享一下
