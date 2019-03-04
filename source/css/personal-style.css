@@ -147,7 +147,7 @@ p {
   background-color: rgba(134, 202, 202, 0.2);
   /*background-color: rgba(241, 226, 122, 0.5);*/
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 680px){
   /* page页面评论样式 */
   .fexo-comments {
     width: 760px;
@@ -158,6 +158,22 @@ p {
   }
   .content .post-list-box ul {
     margin-left: 0px;
+  }
+  /*archive页面的时间*/
+  .item-post .post-date {
+    font-size: 12px;
+    display: inline-block;
+    color: #4c4839;
+  }
+  /*友链info字体样式*/
+  .content.content-link .link-list .link-item a .wrap-info .info {
+    color: #524827;
+  }
+  .content.content-post .article-header .article-meta {
+    color: #60754b;
+  }
+  .article-content p {
+    color: #403f3a;
   }
 }
 /*手机端样式*/
