@@ -173,6 +173,13 @@ neat_js:
     - '**/*.min.js'
     #- '**/index.js'
 
+# 图片懒加载插件
+lazyload:
+  enable: true 
+  onlypost: false
+  loadingImg: /imgs/loading.gif # eg. ./images/loading.png
+
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/

@@ -101,7 +101,7 @@ post:
 # =========================================================
 
 # Custom CSS style, 推荐把样式文件放在blog源码文件夹，而不是主题里面
-personal_style: /css/personal-style.css
+personal_style: /css/personal-style.min.css
 
 # 这个值取决于你得背景图片是深色还是浅色，深色用dark，浅色用light
 home_background_scheme: light # dark、light
@@ -209,15 +209,34 @@ link:
     info: 相见亦无事，不遇长相思！
     url: http://aqqje.com/
     avatar: https://github.com/aqqje/Personal-repository/raw/master/aqqje/avater.jpg
-  - name: Forsigner(感谢Fexo主题设计者)
+  - name: Forsigner(感谢Fexo主题设计者) 
     info: Find the bug of the world 
     url: http://forsigner.com/
     avatar: http://forsigner.com/images/avatar.jpg
-  - name: 阁子(博客魔改的启发者)
-    info: 多可喜，亦多可悲
+  - name: 阁子(博客魔改的启发者) 
+    info: 多可喜，亦多可悲 
     url: https://newdee.cf
     avatar: https://newdee.cf/images/favo.jpg
-
+  - name: Troy(hexo-lazyload-image插件实现)
+    info: Happy Coding, Happy Life!  
+    url: https://troyyang.com
+    avatar: https://troyyang.com/images/avatar-small.png
+  - name: Ryan0up'S Blog (Halo博客系统作者)
+    info: O ever youthful, O ever weeping.
+    url: https://ryanc.cc/
+    avatar: https://ryanc.cc/upload/2018/6/v2-ef180e77b63e636ad8e96f2f57897b71_hd2018062400420251.jpg
+  - name: AquanBlog (Halo微信小程序版作者)
+    info: 河东三十年，河西三十年，莫欺少年穷。 
+    url: https://blog.eunji.cn
+    avatar: https://blog.eunji.cn/upload/2018/8/IronMan20180928215925870.png
+  - name: 低调小熊猫
+    info: 我们不改变世界，我们跟着世界改变  
+    url: https://aodeng.cc/
+    avatar: https://aodeng.cc/upload/2018/10/ddxxm20181104212054985.jpg
+  - name: 纯洁的微笑
+    info: 分享技术，品味人生
+    url: http://www.ityouknow.com/
+    avatar: https://avatars0.githubusercontent.com/u/4979648?s=460&v=4
 #project:
   # - type: personal
   #   name: fexo
