@@ -171,7 +171,7 @@ valine:
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
+  avatar: retro # gravatar style
   guest_info: nick,mail # link # custom comment header
   pageSize: 10 # pagination size
 
@@ -241,6 +241,10 @@ link:
     info: FENews 是一个前端技术分享的组织
     url: http://fenews.org/
     avatar: http://fenews.org/photo.jpg
+  - name: 两仪猿
+    info: The biggest BUG——Human beings
+    url: https://liangyiyuan.fun/
+    avatar: https://liangyiyuan.fun/images/Ethan.png
 #project:
   # - type: personal
   #   name: fexo

@@ -138,7 +138,7 @@ live2d:
     width: 75
     height: 150
   mobile:
-    show: true
+    show: false
 
 # 首页文章排序插件 index2 generator是否包含官方的hexo-generator-index，默认true（包含）
 index2_include_index: true

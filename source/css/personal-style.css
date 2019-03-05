@@ -142,11 +142,6 @@ p {
 .content.content-link .tip .icon-mail {
   color: #666;
 }
-/* valine评论插件样式 */
-.vcomment {
-  background-color: rgba(134, 202, 202, 0.2);
-  /*background-color: rgba(241, 226, 122, 0.5);*/
-}
 @media screen and (min-width: 680px){
   /* page页面评论样式 */
   .fexo-comments {
@@ -174,6 +169,15 @@ p {
   }
   .article-content p {
     color: #403f3a;
+  }
+  /* valine评论插件样式 */
+  .vcomment {
+    background-color: rgba(130, 158, 104, 0.5);
+    /*background-color: rgba(241, 226, 122, 0.5);*/
+    
+  }
+  .v .txt-right {
+    color: #432e13;
   }
 }
 /*手机端样式*/
