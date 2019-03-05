@@ -172,12 +172,9 @@ p {
   }
   /* valine评论插件样式 */
   .vcomment {
-    background-color: rgba(130, 158, 104, 0.5);
+    background-color: rgba(64, 84, 46, 0.3);
     /*background-color: rgba(241, 226, 122, 0.5);*/
     
-  }
-  .v .txt-right {
-    color: #432e13;
   }
 }
 /*手机端样式*/
