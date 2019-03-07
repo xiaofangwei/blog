@@ -209,6 +209,10 @@ link:
     info: 相见亦无事，不遇长相思！
     url: http://aqqje.com/
     avatar: https://github.com/aqqje/Personal-repository/raw/master/aqqje/avater.jpg
+  - name: 神仙散棒槌
+    info: Royal Never Give up
+    url: https://www.zhouguiqiang.com/
+    avatar: https://s2.ax1x.com/2019/03/07/kxsEEq.jpg
   - name: Forsigner(感谢Fexo主题设计者) 
     info: Find the bug of the world 
     url: http://forsigner.com/
@@ -225,10 +229,10 @@ link:
     info: O ever youthful, O ever weeping.
     url: https://ryanc.cc/
     avatar: https://ryanc.cc/upload/2018/6/v2-ef180e77b63e636ad8e96f2f57897b71_hd2018062400420251.jpg
-  - name: AquanBlog (Halo微信小程序版作者)
-    info: 河东三十年，河西三十年，莫欺少年穷。 
-    url: https://blog.eunji.cn
-    avatar: https://blog.eunji.cn/upload/2018/8/IronMan20180928215925870.png
+  # - name: AquanBlog (Halo微信小程序版作者)
+  #   info: 河东三十年，河西三十年，莫欺少年穷。 
+  #   url: https://blog.eunji.cn
+  #   avatar: https://blog.eunji.cn/upload/2018/8/IronMan20180928215925870.png
   - name: 低调小熊猫
     info: 我们不改变世界，我们跟着世界改变  
     url: https://aodeng.cc/
@@ -245,6 +249,10 @@ link:
     info: The biggest BUG——Human beings
     url: https://liangyiyuan.fun/
     avatar: https://liangyiyuan.fun/images/Ethan.png
+  - name: Randy Lu
+    info: Software Engineer. Blogging about life, tech and music.
+    url: https://lutaonan.com
+    avatar: https://ws3.sinaimg.cn/large/006tKfTcgy1fkuuijv4pwj30ku0na3zq.jpg
 #project:
   # - type: personal
   #   name: fexo

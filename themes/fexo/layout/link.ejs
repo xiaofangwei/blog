@@ -7,7 +7,9 @@
     <% theme.link.forEach(function(item, i){ %>
       <li class="link-item link-item-<%= i % 5 %>">
         <a rel="noopener noreferrer" target="_blank" class="link-url" href="<%= item.url || ''%>">
-          <img class="avatar" src="<%= item.avatar%>" alt="<%= item.name || ''%>">
+          <div class="avatar">
+            <img src="<%= item.avatar%>" alt="<%= item.name || ''%>">
+          </div>
           <div class="wrap-info">
             <div class="name"><%= item.name || ''%></div>
             <div class="info"><%= item.info || ''%></div>

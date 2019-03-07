@@ -81,3 +81,5 @@ java.lang.StackOverflowError
 解决：
 
 ​**去掉任意一个实体的toString()，或者两个都可去掉**
+
+[V2EX有关这个类似问题的讨论与更加合理的解决方案](https://www.v2ex.com/t/541510)
