@@ -118,17 +118,11 @@ init_page_content: HOME_NAV  # HOME_NAV | POST
 # 第三方服务
 # =========================================================
 # Stats
-google_analytics: 
+google_analytics: UA-135962328-1
 baidu_analytics: 
 
 # Comment service
 
-# disqus_shortname: forsigner
-# hypercomments_id: 89821
-# gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
-
-#有言用户编号
-# uyan_key:
 
 # 畅言, doc: http://changyan.kuaizhan.com/
 changyan:
@@ -175,9 +169,6 @@ valine:
   guest_info: nick,mail # link # custom comment header
   pageSize: 10 # pagination size
 
-
-
-
 # 不算子,文章访问量统计和显示
 busuanzi: true
 
@@ -188,9 +179,11 @@ about:
   - type: me
     icon: icon-user
     text_value:
-    - "分享知识，分享乐趣"
-    - "己所不欲，勿施于人"
-    - "擅后端开发，常用 Java"
+    - "博客：分享知识，分享乐趣"
+    - "指导：己所不欲，勿施于人"
+    - "特性：乐活与忧郁并存的矛盾体质"
+    - "技能：擅后端开发，常用 Java"
+    - "兴趣：前端开发、健身、骑行"
   - type: Github
     icon: icon-github
     text_key: Github
@@ -229,10 +222,10 @@ link:
     info: O ever youthful, O ever weeping.
     url: https://ryanc.cc/
     avatar: https://ryanc.cc/upload/2018/6/v2-ef180e77b63e636ad8e96f2f57897b71_hd2018062400420251.jpg
-  # - name: AquanBlog (Halo微信小程序版作者)
-  #   info: 河东三十年，河西三十年，莫欺少年穷。 
-  #   url: https://blog.eunji.cn
-  #   avatar: https://blog.eunji.cn/upload/2018/8/IronMan20180928215925870.png
+  - name: AquanBlog (Halo微信小程序版作者)
+    info: 河东三十年，河西三十年，莫欺少年穷。 
+    url: https://blog.eunji.cn
+    avatar: https://blog.eunji.cn/upload/2018/8/IronMan20180928215925870.png
   - name: 低调小熊猫
     info: 我们不改变世界，我们跟着世界改变  
     url: https://aodeng.cc/
@@ -250,9 +243,13 @@ link:
     url: https://liangyiyuan.fun/
     avatar: https://liangyiyuan.fun/images/Ethan.png
   - name: Randy Lu
-    info: Software Engineer. Blogging about life, tech and music.
+    info: Blogging about life, tech and music.
     url: https://lutaonan.com
     avatar: https://ws3.sinaimg.cn/large/006tKfTcgy1fkuuijv4pwj30ku0na3zq.jpg
+  - name: DIYgod
+    info: 写代码是热爱，写到世界充满爱！
+    url: https://diygod.me
+    avatar: https://diygod.me/images/DIYgod.jpg
 #project:
   # - type: personal
   #   name: fexo

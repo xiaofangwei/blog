@@ -73,6 +73,11 @@ search:
 post_style:
   indent: default
 
+
+# 自动生成sitemap npm install hexo-generator-sitemap --save
+sitemap:
+  path: sitemap.xml
+
 # Custom Setting End
 # Directory
 # source_dir: source
@@ -140,18 +145,19 @@ live2d:
   mobile:
     show: false
 
-# 首页文章排序插件 index2 generator是否包含官方的hexo-generator-index，默认true（包含）
+# 首页文章排序插件 npm install hexo-generator-index2 --save index2 generator是否包含官方的hexo-generator-index，默认true（包含）
 index2_include_index: true
 index2_generator:
   - layout: 'archives' # use existing archive layout
     path: 'archives' 
-    per_page: 8
+    per_page: 10
     order_by: -date # 按发布时间排序
     exclude:
-      - tag 人生 # 不包含标签为hide的文章
+      - tag life # 不包含标签为hide的文章
+      - tag diary
       #- category hide # 不包含分类为hide的文章
 
-# hexo-neat
+# hexo-neat npm install hexo-neat --save
 # 博文压缩
 neat_enable: true
 # 压缩html
@@ -173,7 +179,7 @@ neat_js:
     - '**/*.min.js'
     #- '**/index.js'
 
-# 图片懒加载插件
+# 图片懒加载插件 npm install hexo-lazyload-image --save
 lazyload:
   enable: true 
   onlypost: false

@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: normal;
 } */
-html.page-home, html.light {
+html.page-home {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,16 +28,31 @@ html.page-home, html.light {
   
   background: linear-gradient(to left, #5f2c82, #49a09d); */
 }
+/* html.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/imgs/bg.png');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed
+
+  background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);
+  background-blend-mode: screen;
+  
+  background: linear-gradient(to left, #5f2c82, #49a09d);
+} */
 /*文章排版样式调整*/
 .page-header {
   background: rgba(0,0,0,0);
 }
-.content .post-list-box ul {
+/* .content .post-list-box ul {
   margin-left: 16px;
-}
-.article-meta span {
-  background-color: 
-}
+} */
 article hr {
   max-width: 100%;
   margin: 20px 0;
@@ -121,9 +136,9 @@ p {
   margin-left: 6px;
 }
 /*面包屑导航文字*/
-.page-header .breadcrumb .location {
+/* .page-header .breadcrumb .location {
     color: #6d774b;
-}
+} */
 /*文章页面toolbox菜单按钮调节*/
 .post-header .toolbox {
   background-color: rgba(0,0,0,0);
@@ -142,25 +157,32 @@ p {
 .content.content-link .tip .icon-mail {
   color: #666;
 }
+.content.content-link .link-list .link-item img {
+  width: 44px;
+  height: 44px; 
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
 @media screen and (min-width: 680px){
   /* page页面评论样式 */
   .fexo-comments {
     width: 760px;
   }
   /*内容引导线*/
-  .content {
+  /* .content {
     border-left: 4px solid #ccd075;
   }
   .content .post-list-box ul {
     margin-left: 0px;
   }
-  /*archive页面的时间*/
+  archive页面的时间
   .item-post .post-date {
     font-size: 12px;
     display: inline-block;
     color: #4c4839;
   }
-  /*友链info字体样式*/
+  友链info字体样式
   .content.content-link .link-list .link-item a .wrap-info .info {
     color: #524827;
   }
@@ -170,12 +192,12 @@ p {
   .article-content p {
     color: #403f3a;
   }
-  /* valine评论插件样式 */
+  valine评论插件样式
   .vcomment {
     background-color: rgba(64, 84, 46, 0.3);
-    /*background-color: rgba(241, 226, 122, 0.5);*/
+    background-color: rgba(241, 226, 122, 0.5);
     
-  }
+  } */
 }
 /*手机端样式*/
 @media screen and (max-width: 450px) {
