@@ -4,7 +4,14 @@ comments: true
 ---
 > ***All endings are beginnings, we just don`t know it at the time.* **
 ---
+# 2019/3/9
+
+> 今天突然想起来我的博客是可以被Google到的，于是就去开了个Google Analysis，虽然我的博客通常只有我一个访问，但是还是把他加上吧。博客好像因为是被Github Pages托管的，然后Baidu的搜索引擎就爬取不到？不知道是不是这个原因
+>
+> ![ApV8Tx.png](https://s2.ax1x.com/2019/03/09/ApV8Tx.png)
+
 # 2019/3/3
+
 {% aplayer "夜空中最亮的星" "逃跑计划" "https://music.163.com/song/media/outer/url?id=25706282.mp3" "https://s2.ax1x.com/2019/03/03/kLR51e.jpg"  %}
 
 > 这首《夜空中最亮的星》一直是我从高中以来就很喜欢的歌，今天再次感受到是太阳升起还是意外来临了。
