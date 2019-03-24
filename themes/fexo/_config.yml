@@ -22,6 +22,9 @@ home_nav:
   - name: Timeline
     url: /picture/
     target_blank: false
+  - name: Todo
+    url: /todo/
+    target_blank: false
 # config page nav
 page_nav:
   - name: 博客

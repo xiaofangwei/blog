@@ -88,7 +88,9 @@ sitemap:
 # picture_dir: picture
 # code_dir: downloads/code
 # i18n_dir: :lang
-skip_render: css/*
+skip_render: 
+  - 'css/*'
+  - 'todo/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
