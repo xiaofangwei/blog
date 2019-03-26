@@ -2,7 +2,7 @@
 
 body {
   background: #edf0f1;
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
 }
 
 body, input, button {
@@ -255,25 +255,28 @@ ul.todo#completed:after {
 }
 @media screen and (min-width: 500px) {
 	#app {
-		width: 425px;
+		width: 320px;
 		height: 100%;
 		margin: 0 auto;
 		overflow: auto;
-    	background-color: rgba(82, 100, 101, 0.2);
+    background-color: rgba(82, 100, 101, 0.2);
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
 	}
+  #app::-webkit-scrollbar { width: 0 !important }
 	header {
 		position: inherit;
 	}
 	header button{
 		top: unset; 
-	    float: right;
-	    position: inherit;
-    	margin: -51px 0px;
+    float: right;
+    position: inherit;
+  	margin: -51px 0px;
 	}
 	header button svg {
-		top: unset;
-	    position: inherit;
-    	margin: 0px 17px;
+	  top: unset;
+    position: inherit;
+  	margin: 0px 17px;
 	}
 	.container {
 		padding: 15px 10px;

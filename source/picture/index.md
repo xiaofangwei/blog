@@ -4,6 +4,10 @@ comments: true
 ---
 > ***All endings are beginnings, we just don`t know it at the time.* **
 ---
+# 2019/3/26
+
+> 听周某一席话，胜读十年书。
+
 # 2019/3/19
 
 > 又回到学校了
