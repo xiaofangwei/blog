@@ -16,9 +16,9 @@ home_nav:
   - name: Blog
     url: /archives
     target_blank: false #不在新页面打开
-  - name: Github
-    url: https://github.com/no-sky
-    target_blank: true #在新页面打开
+  # - name: Github
+  #   url: https://github.com/no-sky
+  #   target_blank: true #在新页面打开
   - name: Timeline
     url: /picture/
     target_blank: false
