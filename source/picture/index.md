@@ -4,13 +4,12 @@ comments: true
 ---
 > ***All endings are beginnings, we just don`t know it at the time.* **
 ---
-# 2019/3/29
+# 2019/3/30
 
-> ![樱花园航拍.jpg](https://i.loli.net/2019/04/01/5ca220241c040.jpg)
->
-> ![樱花.jpg](https://i.loli.net/2019/04/01/5ca2202b474dc.jpg)
->
-> 摄影by小灰灰
+> 记科大樱花园游  
+> *点击看-->[樱花][樱花]*
+
+[樱花]: /2019/04/02/%E6%B8%B8%E7%A7%91%E5%A4%A7%E6%A8%B1%E8%8A%B1%E5%9B%AD/
 
 # 2019/3/26
 
