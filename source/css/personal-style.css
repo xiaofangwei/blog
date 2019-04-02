@@ -11,7 +11,7 @@
   font-weight: normal;
 } */
 html.page-home {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@ html.page-home {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment:fixed
+  background-attachment:fixed */
 
   /* background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);
   background-blend-mode: screen;
@@ -163,6 +163,13 @@ p {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+}
+/* 下一章 、上一章 与 文章之间的间隔 */
+.box-prev-next a.pull-left {
+  margin-left: -50px;
+}
+.box-prev-next a.pull-right {
+  margin-right: -36px;
 }
 @media screen and (min-width: 680px){
   /* page页面评论样式 */

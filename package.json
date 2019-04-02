@@ -16,7 +16,6 @@
     "hexo-generator-searchdb": "^1.0.8",
     "hexo-generator-sitemap": "^1.2.0",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-helper-live2d": "^3.1.0",
     "hexo-lazyload-image": "^1.0.3",
     "hexo-neat": "^1.0.4",
     "hexo-renderer-ejs": "^0.3.0",
@@ -25,7 +24,6 @@
     "hexo-search": "^1.0.4",
     "hexo-server": "^0.2.0",
     "hexo-tag-aplayer": "^3.0.4",
-    "hexo-tag-dplayer": "^0.3.3",
-    "live2d-widget-model-shizuku": "^1.0.5"
+    "hexo-tag-dplayer": "^0.3.3"
   }
 }
