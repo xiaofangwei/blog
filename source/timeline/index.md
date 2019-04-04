@@ -4,6 +4,10 @@ comments: true
 ---
 > ***All endings are beginnings, we just don`t know it at the time.* **
 ---
+# 2019/4/4
+
+> 删除了以前的一些转载类和笔记类文章。
+
 # 2019/3/30
 
 > 记科大樱花园游  

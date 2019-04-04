@@ -10,7 +10,7 @@ avatar: /imgs/avatar.png
 favicon: /imgs/favicon.ico
 
 # For seo
-keywords: xiaofangwei, Xiao FangWei, Java, 后端开发
+keywords: xiaofangwei, blog, Xiao FangWei, Java, 后端开发
 
 home_nav:
   - name: Blog
@@ -20,7 +20,7 @@ home_nav:
   #   url: https://github.com/no-sky
   #   target_blank: true #在新页面打开
   - name: Timeline
-    url: /picture/
+    url: /timeline/
     target_blank: false
   - name: Todo
     url: /todo/
