@@ -204,5 +204,5 @@ theme: fexo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:No-Sky/No-Sky.github.io.git
+  repository: git@github.com:xiaofangwei/xfw.github.io.git
   branch: master
