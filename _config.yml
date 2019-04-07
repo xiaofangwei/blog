@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Xiao FangWei`s Blog
+title: 世界观察者
 subtitle: 路漫漫其修远兮，吾将上下而求索
-author: Xiao FangWei
+author: observer
 language: zh-CN
 timezone:
 
@@ -23,13 +23,13 @@ permalink_defaults:
 SEOTitle: Xiao FangWei的博客 | Xiao FangWei's Blog
 email: xfw.nosky@gmail.com
 description: 从未有幸见青山
-keyword: xiaofangwei, blog, Xiao FangWei, Java, 后端开发
+keyword: 世界观察者, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
 
 # SNS settings
 # 一些社交平台地址，支持以下几种：
 #weibo_username:     
 #zhihu_username:     
-github_username: No-Sky
+github_username: xiaofangwei
 #twitter_username:   
 #facebook_username:  
 #linkedin_username:  
@@ -90,7 +90,6 @@ sitemap:
 # i18n_dir: :lang
 skip_render: 
   - 'css/*'
-  - 'todo/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts

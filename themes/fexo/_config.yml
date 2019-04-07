@@ -1,5 +1,5 @@
 # Blog info
-blog_name: Xiao FangWei
+blog_name: 世界观察者
 slogan: 路漫漫其修远兮，吾将上下而求索
 url: https://blog.xiaofangwei.cn
 
@@ -10,7 +10,7 @@ avatar: /imgs/avatar.png
 favicon: /imgs/favicon.ico
 
 # For seo
-keywords: xiaofangwei, blog, Xiao FangWei, Java, 后端开发
+keywords: 世界观察者, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
 
 home_nav:
   - name: Blog
@@ -22,9 +22,12 @@ home_nav:
   - name: Timeline
     url: /timeline/
     target_blank: false
-  - name: Todo
-    url: /todo/
+  - name: Links
+    url: /link/
     target_blank: false
+  # - name: Todo
+  #   url: /todo/
+  #   target_blank: false
 # config page nav
 page_nav:
   - name: 博客
@@ -32,9 +35,6 @@ page_nav:
     target_blank: false # 不在新页面打开
   - name: 标签
     url: /tag/
-    target_blank: false
-  - name: 友链
-    url: /link/
     target_blank: false
   - name: 关于
     url: /about/
@@ -136,11 +136,11 @@ changyan:
 # gitalk评论组件，把下面的配置换成你的，官方文档: https://gitalk.github.io/
 gitalk:
   enable: false # 如果使用 gitalk，请设置改之为true
-  clientID: c9cc7e91862e8c3117fc
-  clientSecret: ec3a02e8d94a24249cbaa5109b35f49b4cac7fc0
-  repo: No-Sky.github.io
-  owner: No-Sky
-  admin: No-SKy
+  clientID: f911edd36913cac4f103
+  clientSecret: f78cdecf141e6c6a12c1b3906bbd7c791d14b467
+  repo: xfw.github.io
+  owner: xiaofangwei
+  admin: xiaofangwei
 
 
 # gitment comment service
@@ -183,7 +183,7 @@ about:
     icon: icon-user
     text_value:
     - "博客：分享知识，分享乐趣"
-    - "指导：己所不欲，勿施于人"
+    - "指导：己所不欲，勿施于人；耐心是第一生产力"
     - "特性：乐活与忧郁并存的矛盾体质"
     - "技能：擅后端开发，常用 Java"
     - "兴趣：前端开发、健身、骑行"

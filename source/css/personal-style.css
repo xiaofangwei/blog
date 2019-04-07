@@ -223,6 +223,9 @@ p {
     background-repeat: no-repeat;
     background-attachment:fixed;
   }
+  .toolbox-mobile {
+  	display: none;
+  }
   /*内容边框*/
   .content {
     border: 0;
