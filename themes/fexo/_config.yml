@@ -14,7 +14,7 @@ keywords: 世界观察者, world observer, xiaofangwei, blog, Xiao FangWei, Java
 
 home_nav:
   - name: Blog
-    url: /archives
+    url: /archives/
     target_blank: false #不在新页面打开
   # - name: Github
   #   url: https://github.com/no-sky
