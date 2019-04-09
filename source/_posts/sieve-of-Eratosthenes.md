@@ -1,15 +1,15 @@
 ---
-title: 埃拉托斯特尼筛法(sieve of Eratosthenes)——Java实现
+title: 埃拉托斯特尼筛法(sieve of Eratosthenes)
 comments: false
 date: 2019-04-09 19:12:51
 tags: Math
 ---
 
-> **埃拉托斯特尼筛法**（[希腊语](https://zh.wikipedia.org/wiki/%E5%B8%8C%E8%87%98%E8%AA%9E)：κόσκινον Ἐρατοσθένους，英语：sieve of Eratosthenes ），简称**埃氏筛**，也称**素数筛**。这是一种简单且历史悠久的[筛法](https://zh.wikipedia.org/wiki/%E7%AD%9B%E6%B3%95)，用来找出一定范围内所有的[素数](https://zh.wikipedia.org/wiki/%E8%B3%AA%E6%95%B8)。
+> **埃拉托斯特尼筛法**(希腊语：κόσκινον Ἐρατοσθένους，英语：sieve of Eratosthenes ），简称**埃氏筛**，也称**素数筛**。这是一种简单且历史悠久的筛法，用来找出一定范围内所有的素数。
 >
-> 所使用的原理是从2开始，将每个[素数](https://zh.wikipedia.org/wiki/%E8%B3%AA%E6%95%B8)的各个倍数，标记成[合数](https://zh.wikipedia.org/wiki/%E5%90%88%E6%95%B8)。一个素数的各个倍数，是一个差为此素数本身的等差数列。此为这个筛法和[试除法](https://zh.wikipedia.org/wiki/%E8%A9%A6%E9%99%A4%E6%B3%95)不同的关键之处，后者是以素数来测试每个待测数能否被整除。
+> 所使用的原理是从2开始，将每个素数的各个倍数，标记成合数。一个素数的各个倍数，是一个差为此素数本身的等差数列。此为这个筛法和试除法不同的关键之处，后者是以素数来测试每个待测数能否被整除。
 >
-> 埃拉托斯特尼筛法是列出所有小素数最有效的方法之一，其名字来自于[古希腊数学家](https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B8%8C%E8%87%98%E6%95%B8%E5%AD%B8)[埃拉托斯特尼](https://zh.wikipedia.org/wiki/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC)，并且被描述在另一位古希腊数学家[尼科马库斯](https://zh.wikipedia.org/wiki/%E5%B0%BC%E7%A7%91%E9%A9%AC%E5%BA%93%E6%96%AF)所著的《算术入门》中。                                  ——wiki中文
+> 埃拉托斯特尼筛法是列出所有小素数最有效的方法之一，其名字来自于[\古希腊数学家埃拉托斯特尼筛法是列出所有小素数最有效的方法之一，其名字来自于古希腊数学家，并且被描述在另一位古希腊数学家尼科马库斯所著的《算术入门》中。                                  ——wiki中文
 
 ### 解释
 
@@ -37,14 +37,8 @@ Output: all i such that A[i] is true.
 
 #### Java
 
-```java
-import java.util.Arrays;
-public class Eratosthenes {
-	public static void main(String[] args) {
-        //给出一个0~23的数列的范围
-		eratoshenes(23);
-	}
-	static void eratoshenes(int max){
+```Java
+	void eratoshenes(int max){
 		boolean[] flag = new boolean[max+1];
         //使用java.util.Arrays包提供的fill()方法进行快速填充初始化
 		Arrays.fill(flag, true);
@@ -60,19 +54,12 @@ public class Eratosthenes {
 				}
 			}
 		}
-		// 打印范围内的全部素数
+		//打印max范围内的全部素数
 		for (int i = 0; i <= max; i++) {
 			if (flag[i]) {
 				System.out.print(i +"\t");			
 			}
 		}
 	}
-}
-```
-
-#### 结果：
-
-```
-2	3	5	7	11	13	17	19	23	
 ```
 
