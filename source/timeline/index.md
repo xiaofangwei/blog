@@ -4,6 +4,15 @@ comments: true
 ---
 > ***All endings are beginnings, we just don`t know it at the time.* **
 ---
+# 2019/4/14
+
+> > 很久没跑过5公里了
+> ![4-14-5公里晨跑.jpg](https://i.loli.net/2019/04/14/5cb29d8f327be.jpg)
+
+# 2019/4/13
+> 第一次在公众号抽到奖品。
+> ![Effective-Java公众号中奖.jpg](https://i.loli.net/2019/04/14/5cb29ca9e6f3c.jpg)
+
 # 2019/4/4
 
 > 删除了以前的一些转载类和笔记类文章。
