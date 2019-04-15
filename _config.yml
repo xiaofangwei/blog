@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 世界观察者
+title: World Observer
 subtitle: 路漫漫其修远兮，吾将上下而求索
 author: observer
 language: zh-CN
@@ -20,10 +20,10 @@ permalink_defaults:
 
 # Site settings
 # 网站综合内容设置：
-SEOTitle: Xiao FangWei的博客 | Xiao FangWei's Blog
+SEOTitle: World Observer的博客 | World Observer's Blog
 email: xfw.nosky@gmail.com
 description: 从未有幸见青山
-keyword: 世界观察者, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
+keyword: World Observer, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
 
 # SNS settings
 # 一些社交平台地址，支持以下几种：

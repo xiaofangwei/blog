@@ -1,5 +1,5 @@
 # Blog info
-blog_name: 世界观察者
+blog_name: World Observer
 slogan: 路漫漫其修远兮，吾将上下而求索
 url: https://blog.xiaofangwei.cn
 
@@ -10,7 +10,7 @@ avatar: /imgs/avatar.png
 favicon: /imgs/favicon.ico
 
 # For seo
-keywords: 世界观察者, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
+keywords: World Observer, world observer, xiaofangwei, blog, Xiao FangWei, Java, 后端开发
 
 home_nav:
   - name: Blog
