@@ -1,5 +1,5 @@
 ---
-title: 知行录（2019/2）
+title: 知行录（2019-2）
 date: 2019-02-22 18:15:19
 comments: false
 tags: diary
