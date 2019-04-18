@@ -166,12 +166,15 @@ p {
   vertical-align: middle;
 }
 /* 下一章 、上一章 与 文章之间的间隔 */
-.box-prev-next a.pull-left {
+.box-prev-next {
+	display: none;
+}
+/* .box-prev-next a.pull-left {
   margin-left: -50px;
 }
 .box-prev-next a.pull-right {
   margin-right: -36px;
-}
+} */
 @media screen and (min-width: 680px){
   /* page页面评论样式 */
   .fexo-comments {
