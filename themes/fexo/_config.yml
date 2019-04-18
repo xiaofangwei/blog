@@ -25,9 +25,9 @@ home_nav:
   - name: Links
     url: /link/
     target_blank: false
-  # - name: Todo
-  #   url: /todo/
-  #   target_blank: false
+  - name: Note
+    url: https://no-sky.github.io
+    target_blank: false
 # config page nav
 page_nav:
   - name: 博客
