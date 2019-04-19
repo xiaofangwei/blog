@@ -26,7 +26,7 @@ home_nav:
     url: /link/
     target_blank: false
   - name: Note
-    url: https://no-sky.github.io
+    url: https://note.xiaofangwei.cn
     target_blank: true
 # config page nav
 page_nav:
