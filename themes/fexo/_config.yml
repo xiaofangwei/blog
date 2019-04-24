@@ -186,7 +186,7 @@ about:
     - "指导：己所不欲，勿施于人；耐心是第一生产力"
     - "特性：乐活与忧郁并存的矛盾体质"
     - "技能：擅后端开发，常用 Java"
-    - "兴趣：前端开发、健身、骑行"
+    - "兴趣：阅读、健身、骑行"
   - type: Github
     icon: icon-github
     text_key: Github
@@ -213,7 +213,7 @@ link:
     info: Find the bug of the world 
     url: http://forsigner.com/
     avatar: http://forsigner.com/images/avatar.jpg
-  - name: 阁子(博客魔改的启发者) 
+  - name: 阁子
     info: 多可喜，亦多可悲 
     url: https://newdee.cf
     avatar: https://newdee.cf/images/favo.jpg
