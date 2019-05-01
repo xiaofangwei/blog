@@ -64,7 +64,7 @@ search_slogan:
 
 link_slogan:
   isShow: true # true|fase
-  text: 交换友链可以邮件 xfw.nosky@gmail.com
+  text: 交换友链可以邮件 nosky@xiaofangwei.cn
 
 
 # set backtop show or hide
@@ -194,8 +194,8 @@ about:
     text_value_url: https://github.com/no-sky
   - type: mail
     icon: icon-mail
-    text_key: Gmail
-    text_value: "xfw.nosky@gmail.com"
+    text_key: Mail
+    text_value: "nosky@xiaofangwei.cn"
   #- type: location
   #  icon: icon-location
   #  text_value: 
