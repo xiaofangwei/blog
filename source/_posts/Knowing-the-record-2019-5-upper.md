@@ -14,3 +14,7 @@ message: Don`t try to pry into other people`s minds.
 *2019/5/2 阴*
 
 > 今天我们的团队来了一个新人，他将与我们一起到考试结束，加油吧，小伙子。
+
+*2019/5/3 晴*
+
+> 春光好。
