@@ -54,3 +54,7 @@ message: Don`t try to pry into other people`s minds.
 *2918/5/15 阴*
 
 > 放松放松。
+
+*2019/5/16 阴*
+
+> 安心等待，不急。
