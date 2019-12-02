@@ -27,7 +27,7 @@ jobs:
 
         env:
 
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACTION_TOKEN: ${{ secrets.ACTION_TOKEN }}
 
           BRANCH: master
 
@@ -37,7 +37,7 @@ jobs:
 
           mkdir -p ~/.ssh/
 
-          echo "$ACCESS_TOKEN" | tr -d '\r' > ~/.ssh/id_rsa
+          echo "$ACTION_TOKEN" | tr -d '\r' > ~/.ssh/id_rsa
 
           chmod 600 ~/.ssh/id_rsa
 
@@ -70,5 +70,5 @@ jobs:
           # publish
 
           hexo clean
-          
+
           hexo generate && hexo deploy
