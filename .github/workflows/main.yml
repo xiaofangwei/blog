@@ -27,7 +27,7 @@ jobs:
 
         env:
 
-          ACTION_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
           BRANCH: master
 
@@ -37,7 +37,7 @@ jobs:
 
           mkdir -p ~/.ssh/
 
-          echo "$ACTION_TOKEN" | tr -d '\r' > ~/.ssh/id_rsa
+          echo "$ACCESS_TOKEN" | tr -d '\r' > ~/.ssh/id_rsa
 
           chmod 600 ~/.ssh/id_rsa
 
@@ -68,7 +68,5 @@ jobs:
           export PATH="$PATH:$RUNNER_TOOL_CACHE/pandoc-2.7.3/bin"
 
           # publish
-
-          hexo clean
 
           hexo generate && hexo deploy
