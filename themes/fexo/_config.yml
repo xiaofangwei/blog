@@ -26,7 +26,7 @@ home_nav:
     url: /link/
     target_blank: false
   - name: Note
-    url: https://note.xiaofangwei.cn
+    url: https://www.xiaofangwei.cn
     target_blank: true
 # config page nav
 page_nav:
@@ -185,7 +185,6 @@ about:
     - "博客：分享知识，分享乐趣"
     - "指导：己所不欲，勿施于人；耐心是第一生产力"
     - "特性：乐活与忧郁并存的矛盾体质"
-    - "技能：擅后端开发，常用 Java"
     - "兴趣：阅读、健身、骑行"
   - type: Github
     icon: icon-github
