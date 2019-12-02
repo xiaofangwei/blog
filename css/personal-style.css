@@ -1,0 +1,244 @@
+/* @font-face {
+  font-family: "Meiryo";
+  src: url("/fonts/Meiryo.eot");
+  IE9
+  src: url("/fonts/Meiryo.eot?#iefix") format("embedded-opentype"), IE6-IE8
+  url("/fonts/Meiryo.woff") format("woff"), chrome, firefox
+  url("/fonts/Meiryo.ttf") format("truetype"), chrome, firefox, opera, Safari, Android, iOS 4.2+
+  url("/fonts/Meiryo.svg#Meiryo") format("svg");
+  iOS 4.1-
+  font-style: normal;
+  font-weight: normal;
+} */
+html.page-home {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/imgs/bg.png');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed */
+
+  /* background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);
+  background-blend-mode: screen;
+  
+  background: linear-gradient(to left, #5f2c82, #49a09d); */
+}
+/* html.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/imgs/bg.png');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed
+
+  background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);
+  background-blend-mode: screen;
+  
+  background: linear-gradient(to left, #5f2c82, #49a09d);
+} */
+/*文章排版样式调整*/
+.page-header {
+  background: rgba(0,0,0,0);
+}
+/* .content .post-list-box ul {
+  margin-left: 16px;
+} */
+article hr {
+  max-width: 100%;
+  margin: 20px 0;
+  height: 3px;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(-45deg,#fff,#fff 4px,transparent 4px,transparent 8px);
+}
+.article-content blockquote {
+  margin: 0;
+  padding: 6px 6px;
+  color: #555;
+  border-left: 4px solid #ccc;
+  background: #fafafa;
+}
+blockquote {
+  margin: .1em 6px;
+  padding: .5em 6px;
+  border-left: 5px solid #789;
+  background-color: rgba(245,245,245,.5);
+  position: relative;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 3em;
+  left: 5px;
+  top: .3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+blockquote p {
+  display: inline;
+  margin: 0 0 25px 0;
+}
+p {
+  color: #404040;
+  font-size: 14px;
+  line-height: 30px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+}
+
+/* .article-content p {
+  background-color: rgba(0,0,0,0.1);
+}  */
+/*手机端toolbox样式调整*/
+.toolbox-mobile {
+  font-size: 14px;
+  top: 12px;
+  background: #a7f2f7;
+}
+.modal hr {
+  margin-top: 8px;
+}
+.modal-dialog {
+  height: 72px;
+  transition: all .3s ease-in-out;
+  background: rgba(0,0,0,0);
+}
+.modal-header {
+  display: none;
+}
+.modal-dialog.show-dialog {
+  top:0px;
+}
+.modal-body .list-toolbox .item-toolbox a {
+  font-size: 14px;
+  background: #a7f2f7;
+}
+/*加密插件密码输入框颜色适配*/
+.hbe-input-container input, .hbe-input-container label {
+    background-color: rgba(0,0,0,0);
+}
+/*archive页面toolbox菜单按钮调节*/
+.toolbox {
+  width: 40px;
+}
+.toolbox .list-toolbox .item-toolbox {
+  margin-left: 6px;
+}
+/*面包屑导航文字*/
+/* .page-header .breadcrumb .location {
+    color: #6d774b;
+} */
+/*文章页面toolbox菜单按钮调节*/
+.post-header .toolbox {
+  background-color: rgba(0,0,0,0);
+}
+.post-header .toolbox .list-toobox {
+  left: 42px;
+}
+.post-header .toolbox .list-toobox .item-toolbox {
+  margin-left: 6px;
+}
+/* post页面博客名与slogan样式 */
+.page-header .box-blog-info .info {
+  margin-left: 10px;
+}
+/* 友链邮箱图标 */
+.content.content-link .tip .icon-mail {
+  color: #666;
+}
+.content.content-link .link-list .link-item img {
+  width: 44px;
+  height: 44px; 
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 下一章 、上一章 与 文章之间的间隔 */
+.box-prev-next {
+	display: none;
+}
+/* .box-prev-next a.pull-left {
+  margin-left: -50px;
+}
+.box-prev-next a.pull-right {
+  margin-right: -36px;
+} */
+@media screen and (min-width: 680px){
+  /* page页面评论样式 */
+  .fexo-comments {
+    width: 760px;
+  }
+  /*内容引导线*/
+  /* .content {
+    border-left: 4px solid #ccd075;
+  }
+  .content .post-list-box ul {
+    margin-left: 0px;
+  }
+  archive页面的时间
+  .item-post .post-date {
+    font-size: 12px;
+    display: inline-block;
+    color: #4c4839;
+  }
+  友链info字体样式
+  .content.content-link .link-list .link-item a .wrap-info .info {
+    color: #524827;
+  }
+  .content.content-post .article-header .article-meta {
+    color: #60754b;
+  }
+  .article-content p {
+    color: #403f3a;
+  }
+  valine评论插件样式
+  .vcomment {
+    background-color: rgba(64, 84, 46, 0.3);
+    background-color: rgba(241, 226, 122, 0.5);
+    
+  } */
+}
+/*手机端样式*/
+@media screen and (max-width: 450px) {
+  /*手机端背景图片*/
+  html.page-home, html.light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/imgs/bg_mobile2.png');
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+  .toolbox-mobile {
+  	display: none;
+  }
+  /*内容边框*/
+  .content {
+    border: 0;
+  }
+  /*手机端友链slogan样式调整*/
+  .content.content-link .tip {
+    margin: 20px 0 0 0px;
+    color: #8a9d9e;
+  }
+  .content.content-link .tip .icon-mail {
+    color: #8a9d9e;
+  }
+}

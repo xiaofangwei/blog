@@ -1,0 +1,3 @@
+// build time:Mon Dec 02 2019 11:53:42 GMT+0000 (Coordinated Universal Time)
+var Util={bind:function(n,e,a){n.addEventListener(e,a,false)},addClass:function(n,e){var a=n.className?n.className.split(" "):[];if(a.indexOf(e)<0){a.push(e)}n.className=a.join(" ");return n},removeClass:function(n,e){var a=n.className?n.className.split(" "):[];var s=a.indexOf(e);if(s>-1){a.splice(s,1)}n.className=a.join(" ");return n},request:function(n,e,a,s){var i=new XMLHttpRequest;if(typeof a==="function"){s=a;a=null}i.open(n,e);var t=new FormData;if(n==="POST"&&a){for(var r in a){t.append(r,JSON.stringify(a[r]))}}i.onload=function(){s(JSON.parse(i.response))};i.send(a?t:null)}};
+//rebuild by neat 
