@@ -27,7 +27,7 @@ jobs:
 
         env:
 
-          ACTION_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
           BRANCH: master
 
